@@ -18,3 +18,23 @@ C:\Users\Егорчек\Desktop\моделирование курсач\Modeling
 C:\Users\Егорчек\Desktop\моделирование курсач\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ref\ConsoleTest.dll
 C:\Users\Егорчек\Desktop\моделирование курсач\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ConsoleTest.pdb
 C:\Users\Егорчек\Desktop\моделирование курсач\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ConsoleTest.genruntimeconfig.cache
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\bin\Debug\net5.0\ConsoleTest.exe
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\bin\Debug\net5.0\ConsoleTest.deps.json
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\bin\Debug\net5.0\ConsoleTest.runtimeconfig.json
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\bin\Debug\net5.0\ConsoleTest.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\bin\Debug\net5.0\ConsoleTest.dll
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\bin\Debug\net5.0\ConsoleTest.pdb
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\bin\Debug\net5.0\modeling.exe
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\bin\Debug\net5.0\modeling.pdb
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\bin\Debug\net5.0\modeling.exe.config
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ConsoleTest.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ConsoleTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ConsoleTest.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ConsoleTest.AssemblyInfo.cs
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ConsoleTest.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ConsoleTest.csproj.CopyComplete
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ConsoleTest.dll
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\refint\ConsoleTest.dll
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ConsoleTest.pdb
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ConsoleTest.genruntimeconfig.cache
+C:\Users\Admin\Desktop\ModelingCourseWork\modeling\ConsoleTest\obj\Debug\net5.0\ref\ConsoleTest.dll
