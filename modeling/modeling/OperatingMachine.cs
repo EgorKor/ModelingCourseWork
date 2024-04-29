@@ -134,7 +134,8 @@ namespace modeling
         private void y7(UInt32 AM, UInt32 BM)
         {
             Console.WriteLine("doOp y7");
-            this.AM = AM + 0xC0000000 | ((~BM + 1) & 0x3FFFFFFF);
+            Console.WriteLine($"{OperatingDeviceDetails.toBinaryString(0xC0_00_00_00 | (~BM & 0x3F_FF_FF_FF) + 1, 32)}");
+            this.AM = AM + (0xC0_00_00_00 | ((~BM) & 0x3F_FF_FF_FF) + 1);
         }
         private void y8(UInt32 AM, UInt32 BM)
         {
@@ -182,7 +183,7 @@ namespace modeling
         private void y16()
         {
             Console.WriteLine("doOp y16");
-            C = C & 0xFFFE0000 | (C & 0x1FFFE + 2) & 0x1FFFE;
+            C = C + 2;
         }
 
         private void y17()
