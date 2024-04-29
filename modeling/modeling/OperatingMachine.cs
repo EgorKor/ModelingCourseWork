@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace modeling
 {
-    class OperatingMachine
+    public class OperatingMachine
     {
-        public delegate bool ConditionX();
 
-        private bool[] x { get; set; }
-        private List<ConditionX> conditions { get; set; }
-        private UInt32 AM { get; set; }
-        private UInt32 BM { get; set; }
-        private UInt32 DM { get; set; }
-        private UInt32 A { get; set; }
-        private UInt32 B { get; set; }
-        private UInt32 C { get; set; }
-        private Boolean overflow;
-        private Byte count;
-        private Boolean run;
+
+        public bool[] x { get; set; }
+        public List<ConditionX> conditions { get; set; }
+        public UInt32 AM { get; set; }
+        public UInt32 BM { get; set; }
+        public UInt32 DM { get; set; }
+        public UInt32 A { get; set; }
+        public UInt32 B { get; set; }
+        public UInt32 C { get; set; }
+        public Boolean overflow { get; set; }
+        public Byte count { get; set; }
+        public Boolean run { get; set; }
 
 
         public OperatingMachine()
@@ -28,22 +28,19 @@ namespace modeling
             x = new bool[7];
             conditions = new List<ConditionX>()
             {
-                () => run,                                                                             //X0  
+                () => false,                                                                           //X0  
                 () => BM == 0,                                                                         //X1
                 () => AM == 0,                                                                         //X2
-                () => (AM & 0x100000000) == 1,                                                         //X3
+                () => (AM & 0x80000000) == 0x80000000,                                                 //X3
                 () => count == 0,                                                                      //X4
                 () => (C & 0b1) == 1,                                                                  //X5
                 () => ((A & 0b1) == 1 && (B & 0b1) == 0) || ((A & 0b1) == 0 && ((B & 0b1) == 1))       //X6
             };
         }
 
-
-
-
         public bool[] generateX()
         {
-            bool[] x = new bool[conditions.Count];
+            x = new bool[conditions.Count];
             for (int i = 0; i < conditions.Count; i++)
                 x[i] = conditions[i]();
             return x;
@@ -98,78 +95,99 @@ namespace modeling
 
         private void y0(UInt32 AM)
         {
-            this.AM = (AM & 0x0000FFFF) | ((UInt32)A & 0xEFFF) << 16;
+            Console.WriteLine("doOp y0");
+            this.AM = (AM & 0x0000FFFF) | ((A & 0x7FFF) << 15);
+           /* Console.WriteLine($"A = {A}");
+            Console.WriteLine($"y0 result AM = {OperatingDeviceDetails.toBinaryString(this.AM, 32)}");*/
         }
         private void y1(UInt32 AM)
         {
-            this.AM = AM & 0xFFFF1000;
+            Console.WriteLine("doOp y1");
+            this.AM = this.AM & 0xFFFF8000;
+            /*Console.WriteLine($"y1 result AM = {this.AM}");*/
         }
         private void y2(UInt32 BM)
         {
-            this.BM = (BM & 0x0000FFFF) | ((UInt32)B & 0xEFFF) << 16;
+            Console.WriteLine("doOp y2");
+            this.BM = (BM & 0x0000FFFF) | (((UInt32)B & 0x7FFF) << 15);
         }
         private void y3(UInt32 BM)
         {
-            this.BM = BM & 0xFFFF1000;
+            Console.WriteLine("doOp y3");
+            this.BM = this.BM & 0xFFFF8000;
         }
         private void y4()
         {
+            Console.WriteLine("doOp y4");
             overflow = false;
         }
         private void y5()
         {
+            Console.WriteLine("doOp y5");
             C = 0;
         }
         private void y6()
         {
+            Console.WriteLine("doOp y6");
             overflow = true;
         }
         private void y7(UInt32 AM, UInt32 BM)
         {
+            Console.WriteLine("doOp y7");
             this.AM = AM + 0xC0000000 | ((~BM + 1) & 0x3FFFFFFF);
         }
         private void y8(UInt32 AM, UInt32 BM)
         {
+            Console.WriteLine("doOp y8");
             this.AM = AM + (BM & 0x3FFFFFFF);
         }
         private void y9(UInt32 AM)
         {
+            Console.WriteLine("doOp y9");
             DM = AM;
         }
         private void y10(UInt32 BM)
         {
+            Console.WriteLine("doOp y10");
             this.BM = BM >> 1;
         }
         private void y11()
         {
+            Console.WriteLine("doOp y11");
             count = 0;
         }
 
         private void y12(UInt32 C)
         {
+            Console.WriteLine("doOp y12");
             this.C = (C << 1) | 0b1;
         }
 
         private void y13(UInt32 C)
         {
+            Console.WriteLine("doOp y13");
             this.C = C << 1;
         }
 
         private void y14(UInt32 DM)
         {
+            Console.WriteLine("doOp y14");
             AM = DM;
         }
         private void y15(byte count)
         {
+            Console.WriteLine("doOp y15");
             this.count = (byte)(this.count == 0 ? 0xF : count - 1);
         }
         private void y16()
         {
+            Console.WriteLine("doOp y16");
             C = C & 0xFFFE0000 | (C & 0x1FFFE + 2) & 0x1FFFE;
         }
 
         private void y17()
         {
+            Console.WriteLine("doOp y17");
             C = C | 0x10000;
         }
 

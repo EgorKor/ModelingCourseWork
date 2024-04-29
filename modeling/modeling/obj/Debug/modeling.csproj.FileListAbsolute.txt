@@ -7,3 +7,12 @@ C:\Users\Егор\Desktop\Программная инженерия\Семест
 C:\Users\Егор\Desktop\Программная инженерия\Семестр 6\Моделирование\курсач\мой курсач\modeling\modeling\obj\Debug\modeling.csproj.CoreCompileInputs.cache
 C:\Users\Егор\Desktop\Программная инженерия\Семестр 6\Моделирование\курсач\мой курсач\modeling\modeling\obj\Debug\modeling.exe
 C:\Users\Егор\Desktop\Программная инженерия\Семестр 6\Моделирование\курсач\мой курсач\modeling\modeling\obj\Debug\modeling.pdb
+C:\Users\Егорчек\Desktop\моделирование курсач\ModelingCourseWork\modeling\modeling\bin\Debug\modeling.exe.config
+C:\Users\Егорчек\Desktop\моделирование курсач\ModelingCourseWork\modeling\modeling\bin\Debug\modeling.exe
+C:\Users\Егорчек\Desktop\моделирование курсач\ModelingCourseWork\modeling\modeling\bin\Debug\modeling.pdb
+C:\Users\Егорчек\Desktop\моделирование курсач\ModelingCourseWork\modeling\modeling\obj\Debug\modeling.csproj.AssemblyReference.cache
+C:\Users\Егорчек\Desktop\моделирование курсач\ModelingCourseWork\modeling\modeling\obj\Debug\modeling.Properties.Resources.resources
+C:\Users\Егорчек\Desktop\моделирование курсач\ModelingCourseWork\modeling\modeling\obj\Debug\modeling.csproj.GenerateResource.cache
+C:\Users\Егорчек\Desktop\моделирование курсач\ModelingCourseWork\modeling\modeling\obj\Debug\modeling.csproj.CoreCompileInputs.cache
+C:\Users\Егорчек\Desktop\моделирование курсач\ModelingCourseWork\modeling\modeling\obj\Debug\modeling.exe
+C:\Users\Егорчек\Desktop\моделирование курсач\ModelingCourseWork\modeling\modeling\obj\Debug\modeling.pdb
