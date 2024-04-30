@@ -18,7 +18,7 @@ namespace modeling
         public bool[] Q { get; }
         public bool[] XM { get; }
         public bool[] X { get; }
-        public Byte a;
+        public bool[] a;
         public Byte count;
         public Boolean overflow;
 
@@ -31,7 +31,7 @@ namespace modeling
             bool[] Q,
             bool[] XM,
             bool[] X,
-            Byte a,
+            bool[] a,
             Byte count,
             Boolean overflow)
         {
@@ -60,9 +60,19 @@ namespace modeling
                 $"Q = {toBinaryString(Q)}\n" +
                 $"XM = {toBinaryString(XM)}\n" +
                 $"X = {toBinaryString(X)}\n" +
-                $"a = {a}\n" +
+                $"a = {asNumber(a)}\n" +
                 $"count = {toBinaryString(count, 4)}\n" +
                 $"overflow = {overflow}";
+        }
+
+        public static string asNumber(bool[] num)
+        {
+            for(int i = 0; i < num.Length; i++)
+            {
+                if (num[i])
+                    return "" + i;
+            }
+            return "0";
         }
 
         public static string toBinaryString(bool[] num)

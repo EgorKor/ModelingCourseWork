@@ -44,7 +44,21 @@ namespace modeling
             controlMachine = new ControlMachine(operatingMachine);
         }
 
-
+        public UInt32 runProgram(UInt16 A, UInt16 B)
+        {
+            reset();
+            setA(A);
+            setB(B);
+            setRun(true);
+            tact();
+            do
+            {
+                tact();
+            } while (!controlMachine.a[0]);
+            if (operatingMachine.overflow)
+                throw new ExecutionOverflowException();
+            return operatingMachine.C;
+        }
         
         public OperatingDeviceDetails tact()
         {
@@ -59,19 +73,19 @@ namespace modeling
             return new OperatingDeviceDetails(om.AM, om.BM, om.DM, om.C, cm.Y, cm.D, cm.Q, cm.x, om.x, cm.a, om.count,om.overflow);
         }
 
-        public void doModelingPLU()
+        private void doModelingPLU()
         {
             controlMachine.x = operatingMachine.x;
             controlMachine.x[0] = run;
             run = false;
         }
 
-        public void doModelingPS()
+        private void doModelingPS()
         {
             controlMachine.Q = controlMachine.D;
         }
 
-        public void doModelingDSH()
+        private void doModelingDSH()
         {
             byte a = 0;
             for(int i = 0; i < controlMachine.Q.Length; i++)
@@ -79,21 +93,22 @@ namespace modeling
                 if (controlMachine.Q[i])
                     a += (byte)Math.Pow(2, i);
             }
-            controlMachine.a = a;
+            controlMachine.a = new bool[9];
+            controlMachine.a[a] = true;
         }
 
-        public void doModelingKS_Y()
+        private void doModelingKS_Y()
         {
             controlMachine.generateY();
         }
 
-        public void doModelingOA()
+        private void doModelingOA()
         {
             operatingMachine.doOperations(controlMachine.Y);
             operatingMachine.generateX();
         }
 
-        public void doModelingKS_D()
+        private void doModelingKS_D()
         {
             controlMachine.generateD();
         }

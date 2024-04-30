@@ -1,8 +1,8 @@
 ﻿using modeling;
 
 OperatingDevice device = new OperatingDevice();
-UInt32 A = 0x2000;
-UInt32 B = 0x4000;
+UInt32 A = 0x3FFF;
+UInt32 B = 0xFFFF;
 device.setA(A);
 device.setB(B);
 device.setRun(true);
