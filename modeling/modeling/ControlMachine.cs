@@ -54,8 +54,8 @@ namespace modeling
         {
             Y = new bool[18];
             x = new bool[7];
-            Q = new bool[3];
-            D = new bool[3];
+            Q = new bool[4];
+            D = new bool[4];
             a = new bool[9];
             
             terms = new Dictionary<string, Term>()
@@ -83,7 +83,7 @@ namespace modeling
             dFunctions = new Dictionary<String, DFunction>()
             {
                 {"d0" ,() => t["t8"]() || t["t10"]() || t["t12"]() || t["t13"]() || t["t16"]()},
-                {"d1" ,() => t["t9"]() || t["t10"]() || t["t11"]() || t["t14"]() || t["t15"]() || t["t16"]()},
+                {"d1" ,() => t["t9"]() || t["t10"]() || t["t14"]() || t["t15"]() || t["t16"]()},
                 {"d2" ,() => t["t11"]() || t["t12"]() || t["t13"]() || t["t14"]() || t["t15"]() || t["t16"]()},
                 {"d3", () => t["t17"]() }
             };

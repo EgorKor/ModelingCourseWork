@@ -51,13 +51,14 @@ namespace modeling
             setB(B);
             setRun(true);
             tact();
+            OperatingDeviceDetails tactResult;
             do
             {
-                tact();
+                tactResult = tact();
             } while (!controlMachine.a[0]);
             if (operatingMachine.overflow)
                 throw new ExecutionOverflowException();
-            return operatingMachine.C;
+            return tactResult.C;
         }
         
         public OperatingDeviceDetails tact()
