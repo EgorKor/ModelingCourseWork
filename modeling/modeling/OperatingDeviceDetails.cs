@@ -18,9 +18,10 @@ namespace modeling
         public bool[] Q { get; }
         public bool[] XM { get; }
         public bool[] X { get; }
-        public bool[] a;
-        public Byte count;
-        public Boolean overflow;
+        public bool[] a { get; }
+        public Byte count { get; }
+        public Boolean overflow { get; }
+        public bool[] T { get; }
 
         public OperatingDeviceDetails(UInt32 AM,
             UInt32 BM,
@@ -28,6 +29,7 @@ namespace modeling
             UInt32 C,
             bool[] Y,
             bool[] D,
+            bool[] T,
             bool[] Q,
             bool[] XM,
             bool[] X,
@@ -41,6 +43,7 @@ namespace modeling
             this.C = C;
             this.Y = Y;
             this.D = D;
+            this.T = T;
             this.Q = Q;
             this.XM = XM;
             this.X = X;

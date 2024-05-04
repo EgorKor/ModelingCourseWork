@@ -11,7 +11,7 @@ namespace modeling
     /// </summary>
     class ControlMachine
     {
-        public delegate bool Term();
+        public delegate bool Term(bool[] xm);
         public delegate bool YFunction();
         public delegate bool DFunction();
 
@@ -43,70 +43,74 @@ namespace modeling
         /// <summary>
         /// выходы ПЛУ
         /// </summary>
-        public bool[] x { get; set; }
+        public bool[] xm { get; set; }
         /// <summary>
         /// Выход ДШ
         /// </summary>
         public bool[] a { get; set; }
+        /// <summary>
+        /// Выходы КС T
+        /// </summary>
+        public bool[] T { get; set; }
+
         private OperatingMachine operatingMachine;
         
         public ControlMachine(OperatingMachine om)
         {
             Y = new bool[18];
-            x = new bool[7];
+            xm = new bool[2];
             Q = new bool[4];
             D = new bool[4];
             a = new bool[9];
             
             terms = new Dictionary<string, Term>()
             {
-                {"t0",() => a[0] && !x[0]},
-                {"t1",() => a[1] && x[1]},
-                {"t2",() => a[1] && !x[1] && x[2]},
-                {"t3",() => a[2] && !x[3]},
-                {"t4",() => a[7] && x[4] && !x[5] && !x[6]},
-                {"t5",() => a[8] && !x[5] && x[6]},
-                {"t6",() => a[8] && x[6]},
-                {"t7",() => a[8] && x[6]},
-                {"t8",() => a[0] && x[0]},
-                {"t9",() => a[1] && !x[1] && !x[2]},
-                {"t10",() => a[2] && x[3]},
-                {"t11",() => a[3]},
-                {"t12",() => a[4]},
-                {"t13",() => a[7] && !x[4]},
-                {"t14",() => a[5] && !x[3]},
-                {"t15",() => a[5] && x[3]},
-                {"t16",() => a[6]},
-                {"t17",() => a[7] && x[4] && x[5]}
+                {"t0",(bool[] x) => a[0] && !x[0]},
+                {"t1",(bool[] x) => a[1] && x[1]},
+                {"t2",(bool[] x) => a[1] && !x[1] && x[2]},
+                {"t3",(bool[] x) => a[2] && !x[3]},
+                {"t4",(bool[] x) => a[7] && x[4] && !x[5] && !x[6]},
+                {"t5",(bool[] x) => a[8] && !x[5] && x[6]},
+                {"t6",(bool[] x) => a[8] && x[6]},
+                {"t7",(bool[] x) => a[8] && x[6]},
+                {"t8",(bool[] x) => a[0] && x[0]},
+                {"t9",(bool[] x) => a[1] && !x[1] && !x[2]},
+                {"t10",(bool[] x) => a[2] && x[3]},
+                {"t11",(bool[] x) => a[3]},
+                {"t12",(bool[] x) => a[4]},
+                {"t13",(bool[] x) => a[7] && !x[4]},
+                {"t14",(bool[] x) => a[5] && !x[3]},
+                {"t15",(bool[] x) => a[5] && x[3]},
+                {"t16",(bool[] x) => a[6]},
+                {"t17",(bool[] x) => a[7] && x[4] && x[5]}
             };
-            Dictionary<string, Term> t = terms;
             dFunctions = new Dictionary<String, DFunction>()
             {
-                {"d0" ,() => t["t8"]() || t["t10"]() || t["t12"]() || t["t13"]() || t["t16"]()},
-                {"d1" ,() => t["t9"]() || t["t10"]() || t["t14"]() || t["t15"]() || t["t16"]()},
-                {"d2" ,() => t["t11"]() || t["t12"]() || t["t13"]() || t["t14"]() || t["t15"]() || t["t16"]()},
-                {"d3", () => t["t17"]() }
+                {"d0" ,() => T[8] || T[10] || T[12] || T[13] || T[16]},
+                {"d1" ,() => T[9] || T[10] || T[14] || T[15] || T[16]},
+                {"d2" ,() => T[11] || T[12] || T[13] || T[14] || T[15] || T[16]},
+                {"d3", () => T[17] }
             };
             yFunctions = new Dictionary<String, YFunction>()
             {
-                {"y0" ,() => t["t8"]() },
-                {"y1" ,() => t["t8"]() },
-                {"y2" ,() => t["t8"]() },
-                {"y3" ,() => t["t8"]() },
-                {"y4" ,() => t["t8"]() },
-                {"y5" ,() => t["t2"]() || t["t11"]()},
-                {"y6" ,() => t["t1"]() || t["t3"]() },
-                {"y7" ,() => t["t9"]() || t["t12"]() || t["t13"]()},
-                {"y8" ,() => t["t10"]() },
-                {"y9" ,() => t["t11"]() || t["t16"]() },
-                {"y10" ,() => t["t11"]() || t["t16"]() },
-                {"y11" ,() => t["t11"]()},
-                {"y12" ,() => t["t14"]()},
-                {"y13" ,() => t["t15"]()},
-                {"y14" ,() => t["t15"]()},
-                {"y15" ,() => t["t16"]()},
-                {"y16" ,() => t["t17"]()},
-                {"y17" ,() => t["t5"]() || t["t7"]()},
+                {"y0" ,() => T[8] },
+                {"y1" ,() => T[8] },
+                {"y2" ,() => T[8] },
+                {"y3" ,() => T[8] },
+                {"y4" ,() => T[8] },
+                {"y5" ,() => T[2] || T[11]},
+                {"y6" ,() => T[1] || T[3] },
+                {"y7" ,() => T[9] || T[12] || T[13]},
+                {"y8" ,() => T[10] },
+                {"y9" ,() => T[11] || T[16] },
+                {"y10" ,() => T[11] || T[16] },
+                {"y11" ,() => T[11]},
+                {"y12" ,() => T[14]},
+                {"y13" ,() => T[15]},
+                {"y14" ,() => T[15]},
+                {"y15" ,() => T[16]},
+                {"y16" ,() => T[17]},
+                {"y17" ,() => T[5] || T[7]},
             };
             
             
@@ -138,6 +142,18 @@ namespace modeling
             foreach (KeyValuePair<String, DFunction> dFunc in dFunctions)
             {
                 D[i] = dFunc.Value();
+                i++;
+            }
+            return D;
+        }
+
+        public bool[] generateT(bool[] x)
+        {
+            T = new bool[terms.Count];
+            int i = 0;
+            foreach (KeyValuePair<String, Term> term in terms)
+            {
+                T[i] = term.Value(x); 
                 i++;
             }
             return D;

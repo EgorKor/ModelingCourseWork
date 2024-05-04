@@ -30,6 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gsaPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ga0_0 = new System.Windows.Forms.CheckBox();
+            this.ga8 = new System.Windows.Forms.CheckBox();
+            this.ga7 = new System.Windows.Forms.CheckBox();
+            this.ga6 = new System.Windows.Forms.CheckBox();
+            this.ga5 = new System.Windows.Forms.CheckBox();
+            this.ga4 = new System.Windows.Forms.CheckBox();
+            this.ga3 = new System.Windows.Forms.CheckBox();
+            this.ga2 = new System.Windows.Forms.CheckBox();
+            this.ga1 = new System.Windows.Forms.CheckBox();
+            this.ga0 = new System.Windows.Forms.CheckBox();
             this.aDecimalTextBox = new System.Windows.Forms.TextBox();
             this.bDecimalTextBox = new System.Windows.Forms.TextBox();
             this.resultTextBox = new System.Windows.Forms.TextBox();
@@ -197,16 +208,6 @@
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ga0_0 = new System.Windows.Forms.CheckBox();
-            this.ga0 = new System.Windows.Forms.CheckBox();
-            this.ga8 = new System.Windows.Forms.CheckBox();
-            this.ga7 = new System.Windows.Forms.CheckBox();
-            this.ga6 = new System.Windows.Forms.CheckBox();
-            this.ga5 = new System.Windows.Forms.CheckBox();
-            this.ga4 = new System.Windows.Forms.CheckBox();
-            this.ga3 = new System.Windows.Forms.CheckBox();
-            this.ga2 = new System.Windows.Forms.CheckBox();
-            this.ga1 = new System.Windows.Forms.CheckBox();
             this.y17 = new System.Windows.Forms.CheckBox();
             this.y16 = new System.Windows.Forms.CheckBox();
             this.y15 = new System.Windows.Forms.CheckBox();
@@ -249,23 +250,36 @@
             this.Q2 = new System.Windows.Forms.CheckBox();
             this.Q1 = new System.Windows.Forms.CheckBox();
             this.Q0 = new System.Windows.Forms.CheckBox();
-            this.xm6 = new System.Windows.Forms.CheckBox();
-            this.xm5 = new System.Windows.Forms.CheckBox();
-            this.xm4 = new System.Windows.Forms.CheckBox();
             this.xm3 = new System.Windows.Forms.CheckBox();
             this.xm2 = new System.Windows.Forms.CheckBox();
-            this.xm1 = new System.Windows.Forms.CheckBox();
-            this.xm0 = new System.Windows.Forms.CheckBox();
             this.runButton = new System.Windows.Forms.Button();
             this.tactButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tactRadioButton = new System.Windows.Forms.RadioButton();
             this.autoRadioButton = new System.Windows.Forms.RadioButton();
             this.resetButton = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.t17 = new System.Windows.Forms.CheckBox();
+            this.t16 = new System.Windows.Forms.CheckBox();
+            this.t15 = new System.Windows.Forms.CheckBox();
+            this.t14 = new System.Windows.Forms.CheckBox();
+            this.t13 = new System.Windows.Forms.CheckBox();
+            this.t12 = new System.Windows.Forms.CheckBox();
+            this.t11 = new System.Windows.Forms.CheckBox();
+            this.t10 = new System.Windows.Forms.CheckBox();
+            this.t9 = new System.Windows.Forms.CheckBox();
+            this.t8 = new System.Windows.Forms.CheckBox();
+            this.t7 = new System.Windows.Forms.CheckBox();
+            this.t6 = new System.Windows.Forms.CheckBox();
+            this.t5 = new System.Windows.Forms.CheckBox();
+            this.t4 = new System.Windows.Forms.CheckBox();
+            this.t3 = new System.Windows.Forms.CheckBox();
+            this.t2 = new System.Windows.Forms.CheckBox();
+            this.t1 = new System.Windows.Forms.CheckBox();
+            this.t0 = new System.Windows.Forms.CheckBox();
             this.gsaPictureBox = new System.Windows.Forms.PictureBox();
             this.odPictureBox = new System.Windows.Forms.PictureBox();
             this.gsaPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cntDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bmDataGrid)).BeginInit();
@@ -274,7 +288,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDataGrid)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gsaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.odPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -285,6 +298,24 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gsaPanel.AutoScroll = true;
+            this.gsaPanel.Controls.Add(this.t17);
+            this.gsaPanel.Controls.Add(this.t16);
+            this.gsaPanel.Controls.Add(this.t15);
+            this.gsaPanel.Controls.Add(this.t14);
+            this.gsaPanel.Controls.Add(this.t13);
+            this.gsaPanel.Controls.Add(this.t12);
+            this.gsaPanel.Controls.Add(this.t11);
+            this.gsaPanel.Controls.Add(this.t10);
+            this.gsaPanel.Controls.Add(this.t9);
+            this.gsaPanel.Controls.Add(this.t8);
+            this.gsaPanel.Controls.Add(this.t7);
+            this.gsaPanel.Controls.Add(this.t6);
+            this.gsaPanel.Controls.Add(this.t5);
+            this.gsaPanel.Controls.Add(this.t4);
+            this.gsaPanel.Controls.Add(this.t3);
+            this.gsaPanel.Controls.Add(this.t2);
+            this.gsaPanel.Controls.Add(this.t1);
+            this.gsaPanel.Controls.Add(this.t0);
             this.gsaPanel.Controls.Add(this.panel1);
             this.gsaPanel.Controls.Add(this.aDecimalTextBox);
             this.gsaPanel.Controls.Add(this.bDecimalTextBox);
@@ -346,23 +377,161 @@
             this.gsaPanel.Controls.Add(this.Q2);
             this.gsaPanel.Controls.Add(this.Q1);
             this.gsaPanel.Controls.Add(this.Q0);
-            this.gsaPanel.Controls.Add(this.xm6);
-            this.gsaPanel.Controls.Add(this.xm5);
-            this.gsaPanel.Controls.Add(this.xm4);
             this.gsaPanel.Controls.Add(this.xm3);
             this.gsaPanel.Controls.Add(this.xm2);
-            this.gsaPanel.Controls.Add(this.xm1);
-            this.gsaPanel.Controls.Add(this.xm0);
             this.gsaPanel.Controls.Add(this.odPictureBox);
             this.gsaPanel.Location = new System.Drawing.Point(13, 13);
             this.gsaPanel.Name = "gsaPanel";
             this.gsaPanel.Size = new System.Drawing.Size(1473, 936);
             this.gsaPanel.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.ga0_0);
+            this.panel1.Controls.Add(this.ga8);
+            this.panel1.Controls.Add(this.ga7);
+            this.panel1.Controls.Add(this.ga6);
+            this.panel1.Controls.Add(this.ga5);
+            this.panel1.Controls.Add(this.ga4);
+            this.panel1.Controls.Add(this.ga3);
+            this.panel1.Controls.Add(this.ga2);
+            this.panel1.Controls.Add(this.ga1);
+            this.panel1.Controls.Add(this.ga0);
+            this.panel1.Controls.Add(this.gsaPictureBox);
+            this.panel1.Location = new System.Drawing.Point(14, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(497, 912);
+            this.panel1.TabIndex = 79;
+            // 
+            // ga0_0
+            // 
+            this.ga0_0.AutoSize = true;
+            this.ga0_0.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ga0_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ga0_0.Location = new System.Drawing.Point(403, 2017);
+            this.ga0_0.Name = "ga0_0";
+            this.ga0_0.Size = new System.Drawing.Size(46, 24);
+            this.ga0_0.TabIndex = 60;
+            this.ga0_0.Text = "a0";
+            this.ga0_0.UseVisualStyleBackColor = false;
+            // 
+            // ga8
+            // 
+            this.ga8.AutoSize = true;
+            this.ga8.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ga8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ga8.Location = new System.Drawing.Point(403, 1814);
+            this.ga8.Name = "ga8";
+            this.ga8.Size = new System.Drawing.Size(46, 24);
+            this.ga8.TabIndex = 58;
+            this.ga8.Text = "a8";
+            this.ga8.UseVisualStyleBackColor = false;
+            // 
+            // ga7
+            // 
+            this.ga7.AutoSize = true;
+            this.ga7.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ga7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ga7.Location = new System.Drawing.Point(403, 1582);
+            this.ga7.Name = "ga7";
+            this.ga7.Size = new System.Drawing.Size(46, 24);
+            this.ga7.TabIndex = 57;
+            this.ga7.Text = "a7";
+            this.ga7.UseVisualStyleBackColor = false;
+            // 
+            // ga6
+            // 
+            this.ga6.AutoSize = true;
+            this.ga6.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ga6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ga6.Location = new System.Drawing.Point(403, 1488);
+            this.ga6.Name = "ga6";
+            this.ga6.Size = new System.Drawing.Size(46, 24);
+            this.ga6.TabIndex = 56;
+            this.ga6.Text = "a6";
+            this.ga6.UseVisualStyleBackColor = false;
+            // 
+            // ga5
+            // 
+            this.ga5.AutoSize = true;
+            this.ga5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ga5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ga5.Location = new System.Drawing.Point(403, 1220);
+            this.ga5.Name = "ga5";
+            this.ga5.Size = new System.Drawing.Size(46, 24);
+            this.ga5.TabIndex = 55;
+            this.ga5.Text = "a5";
+            this.ga5.UseVisualStyleBackColor = false;
+            // 
+            // ga4
+            // 
+            this.ga4.AutoSize = true;
+            this.ga4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ga4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ga4.Location = new System.Drawing.Point(403, 1142);
+            this.ga4.Name = "ga4";
+            this.ga4.Size = new System.Drawing.Size(46, 24);
+            this.ga4.TabIndex = 54;
+            this.ga4.Text = "a4";
+            this.ga4.UseVisualStyleBackColor = false;
+            // 
+            // ga3
+            // 
+            this.ga3.AutoSize = true;
+            this.ga3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ga3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ga3.Location = new System.Drawing.Point(403, 1052);
+            this.ga3.Name = "ga3";
+            this.ga3.Size = new System.Drawing.Size(46, 24);
+            this.ga3.TabIndex = 53;
+            this.ga3.Text = "a3";
+            this.ga3.UseVisualStyleBackColor = false;
+            // 
+            // ga2
+            // 
+            this.ga2.AutoSize = true;
+            this.ga2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ga2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ga2.Location = new System.Drawing.Point(417, 855);
+            this.ga2.Name = "ga2";
+            this.ga2.Size = new System.Drawing.Size(46, 24);
+            this.ga2.TabIndex = 52;
+            this.ga2.Text = "a2";
+            this.ga2.UseVisualStyleBackColor = false;
+            // 
+            // ga1
+            // 
+            this.ga1.AutoSize = true;
+            this.ga1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ga1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ga1.Location = new System.Drawing.Point(403, 610);
+            this.ga1.Name = "ga1";
+            this.ga1.Size = new System.Drawing.Size(46, 24);
+            this.ga1.TabIndex = 51;
+            this.ga1.Text = "a1";
+            this.ga1.UseVisualStyleBackColor = false;
+            // 
+            // ga0
+            // 
+            this.ga0.AutoSize = true;
+            this.ga0.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ga0.Checked = true;
+            this.ga0.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ga0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ga0.Location = new System.Drawing.Point(403, 430);
+            this.ga0.Name = "ga0";
+            this.ga0.Size = new System.Drawing.Size(46, 24);
+            this.ga0.TabIndex = 59;
+            this.ga0.Text = "a0";
+            this.ga0.UseVisualStyleBackColor = false;
+            // 
             // aDecimalTextBox
             // 
             this.aDecimalTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.aDecimalTextBox.Location = new System.Drawing.Point(1216, 103);
+            this.aDecimalTextBox.Location = new System.Drawing.Point(1336, 104);
             this.aDecimalTextBox.Name = "aDecimalTextBox";
             this.aDecimalTextBox.ReadOnly = true;
             this.aDecimalTextBox.Size = new System.Drawing.Size(186, 26);
@@ -372,7 +541,7 @@
             // bDecimalTextBox
             // 
             this.bDecimalTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bDecimalTextBox.Location = new System.Drawing.Point(1216, 228);
+            this.bDecimalTextBox.Location = new System.Drawing.Point(1336, 229);
             this.bDecimalTextBox.Name = "bDecimalTextBox";
             this.bDecimalTextBox.ReadOnly = true;
             this.bDecimalTextBox.Size = new System.Drawing.Size(186, 26);
@@ -382,7 +551,7 @@
             // resultTextBox
             // 
             this.resultTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultTextBox.Location = new System.Drawing.Point(1212, 687);
+            this.resultTextBox.Location = new System.Drawing.Point(1332, 688);
             this.resultTextBox.Name = "resultTextBox";
             this.resultTextBox.ReadOnly = true;
             this.resultTextBox.Size = new System.Drawing.Size(186, 26);
@@ -392,7 +561,7 @@
             // 
             this.resultLabel.AutoSize = true;
             this.resultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultLabel.Location = new System.Drawing.Point(1213, 663);
+            this.resultLabel.Location = new System.Drawing.Point(1333, 664);
             this.resultLabel.Name = "resultLabel";
             this.resultLabel.Size = new System.Drawing.Size(185, 20);
             this.resultLabel.TabIndex = 75;
@@ -402,7 +571,7 @@
             // 
             this.CountRegisterLabel.AutoSize = true;
             this.CountRegisterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CountRegisterLabel.Location = new System.Drawing.Point(1214, 291);
+            this.CountRegisterLabel.Location = new System.Drawing.Point(1334, 292);
             this.CountRegisterLabel.Name = "CountRegisterLabel";
             this.CountRegisterLabel.Size = new System.Drawing.Size(97, 20);
             this.CountRegisterLabel.TabIndex = 74;
@@ -418,7 +587,7 @@
             this.dataGridViewTextBoxColumn126,
             this.dataGridViewTextBoxColumn127,
             this.dataGridViewTextBoxColumn128});
-            this.cntDataGrid.Location = new System.Drawing.Point(1214, 319);
+            this.cntDataGrid.Location = new System.Drawing.Point(1334, 320);
             this.cntDataGrid.Name = "cntDataGrid";
             this.cntDataGrid.ReadOnly = true;
             this.cntDataGrid.RowHeadersVisible = false;
@@ -461,7 +630,7 @@
             // 
             this.DRegisterLabel.AutoSize = true;
             this.DRegisterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DRegisterLabel.Location = new System.Drawing.Point(1213, 519);
+            this.DRegisterLabel.Location = new System.Drawing.Point(1333, 520);
             this.DRegisterLabel.Name = "DRegisterLabel";
             this.DRegisterLabel.Size = new System.Drawing.Size(86, 20);
             this.DRegisterLabel.TabIndex = 72;
@@ -505,7 +674,7 @@
             this.dataGridViewTextBoxColumn110,
             this.dataGridViewTextBoxColumn111,
             this.dataGridViewTextBoxColumn112});
-            this.dDataGrid.Location = new System.Drawing.Point(1212, 546);
+            this.dDataGrid.Location = new System.Drawing.Point(1332, 547);
             this.dDataGrid.Name = "dDataGrid";
             this.dDataGrid.ReadOnly = true;
             this.dDataGrid.RowHeadersVisible = false;
@@ -772,7 +941,7 @@
             // 
             this.BMRegisterLabel.AutoSize = true;
             this.BMRegisterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BMRegisterLabel.Location = new System.Drawing.Point(1212, 443);
+            this.BMRegisterLabel.Location = new System.Drawing.Point(1332, 444);
             this.BMRegisterLabel.Name = "BMRegisterLabel";
             this.BMRegisterLabel.Size = new System.Drawing.Size(98, 20);
             this.BMRegisterLabel.TabIndex = 70;
@@ -816,7 +985,7 @@
             this.dataGridViewTextBoxColumn78,
             this.dataGridViewTextBoxColumn79,
             this.dataGridViewTextBoxColumn80});
-            this.bmDataGrid.Location = new System.Drawing.Point(1212, 466);
+            this.bmDataGrid.Location = new System.Drawing.Point(1332, 467);
             this.bmDataGrid.Name = "bmDataGrid";
             this.bmDataGrid.ReadOnly = true;
             this.bmDataGrid.RowHeadersVisible = false;
@@ -1083,7 +1252,7 @@
             // 
             this.AMRegisterLabel.AutoSize = true;
             this.AMRegisterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AMRegisterLabel.Location = new System.Drawing.Point(1212, 366);
+            this.AMRegisterLabel.Location = new System.Drawing.Point(1332, 367);
             this.AMRegisterLabel.Name = "AMRegisterLabel";
             this.AMRegisterLabel.Size = new System.Drawing.Size(98, 20);
             this.AMRegisterLabel.TabIndex = 68;
@@ -1127,7 +1296,7 @@
             this.dataGridViewTextBoxColumn46,
             this.dataGridViewTextBoxColumn47,
             this.dataGridViewTextBoxColumn48});
-            this.amDataGrid.Location = new System.Drawing.Point(1212, 389);
+            this.amDataGrid.Location = new System.Drawing.Point(1332, 390);
             this.amDataGrid.Name = "amDataGrid";
             this.amDataGrid.ReadOnly = true;
             this.amDataGrid.RowHeadersVisible = false;
@@ -1394,7 +1563,7 @@
             // 
             this.CRegisterLabel.AutoSize = true;
             this.CRegisterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CRegisterLabel.Location = new System.Drawing.Point(1212, 589);
+            this.CRegisterLabel.Location = new System.Drawing.Point(1332, 590);
             this.CRegisterLabel.Name = "CRegisterLabel";
             this.CRegisterLabel.Size = new System.Drawing.Size(85, 20);
             this.CRegisterLabel.TabIndex = 66;
@@ -1404,7 +1573,7 @@
             // 
             this.BRegisterLabel.AutoSize = true;
             this.BRegisterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BRegisterLabel.Location = new System.Drawing.Point(1218, 153);
+            this.BRegisterLabel.Location = new System.Drawing.Point(1338, 154);
             this.BRegisterLabel.Name = "BRegisterLabel";
             this.BRegisterLabel.Size = new System.Drawing.Size(85, 20);
             this.BRegisterLabel.TabIndex = 65;
@@ -1414,7 +1583,7 @@
             // 
             this.ARegisterLabel.AutoSize = true;
             this.ARegisterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ARegisterLabel.Location = new System.Drawing.Point(1217, 20);
+            this.ARegisterLabel.Location = new System.Drawing.Point(1337, 21);
             this.ARegisterLabel.Name = "ARegisterLabel";
             this.ARegisterLabel.Size = new System.Drawing.Size(85, 20);
             this.ARegisterLabel.TabIndex = 64;
@@ -1443,7 +1612,7 @@
             this.dataGridViewTextBoxColumn30,
             this.dataGridViewTextBoxColumn31,
             this.dataGridViewTextBoxColumn32});
-            this.cDataGrid.Location = new System.Drawing.Point(1211, 617);
+            this.cDataGrid.Location = new System.Drawing.Point(1331, 618);
             this.cDataGrid.Name = "cDataGrid";
             this.cDataGrid.ReadOnly = true;
             this.cDataGrid.RowHeadersVisible = false;
@@ -1607,7 +1776,7 @@
             this.dataGridViewTextBoxColumn14,
             this.dataGridViewTextBoxColumn15,
             this.dataGridViewTextBoxColumn16});
-            this.bDataGrid.Location = new System.Drawing.Point(1218, 182);
+            this.bDataGrid.Location = new System.Drawing.Point(1338, 183);
             this.bDataGrid.Name = "bDataGrid";
             this.bDataGrid.ReadOnly = true;
             this.bDataGrid.RowHeadersVisible = false;
@@ -1765,7 +1934,7 @@
             this.Column14,
             this.Column15,
             this.Column16});
-            this.aDataGrid.Location = new System.Drawing.Point(1216, 57);
+            this.aDataGrid.Location = new System.Drawing.Point(1336, 58);
             this.aDataGrid.Name = "aDataGrid";
             this.aDataGrid.ReadOnly = true;
             this.aDataGrid.RowHeadersVisible = false;
@@ -1901,134 +2070,12 @@
             this.Column16.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column16.Width = 25;
             // 
-            // ga0_0
-            // 
-            this.ga0_0.AutoSize = true;
-            this.ga0_0.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ga0_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga0_0.Location = new System.Drawing.Point(403, 1657);
-            this.ga0_0.Name = "ga0_0";
-            this.ga0_0.Size = new System.Drawing.Size(46, 24);
-            this.ga0_0.TabIndex = 60;
-            this.ga0_0.Text = "a0";
-            this.ga0_0.UseVisualStyleBackColor = false;
-            // 
-            // ga0
-            // 
-            this.ga0.AutoSize = true;
-            this.ga0.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ga0.Checked = true;
-            this.ga0.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ga0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga0.Location = new System.Drawing.Point(403, 70);
-            this.ga0.Name = "ga0";
-            this.ga0.Size = new System.Drawing.Size(46, 24);
-            this.ga0.TabIndex = 59;
-            this.ga0.Text = "a0";
-            this.ga0.UseVisualStyleBackColor = false;
-            // 
-            // ga8
-            // 
-            this.ga8.AutoSize = true;
-            this.ga8.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ga8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga8.Location = new System.Drawing.Point(403, 1454);
-            this.ga8.Name = "ga8";
-            this.ga8.Size = new System.Drawing.Size(46, 24);
-            this.ga8.TabIndex = 58;
-            this.ga8.Text = "a8";
-            this.ga8.UseVisualStyleBackColor = false;
-            // 
-            // ga7
-            // 
-            this.ga7.AutoSize = true;
-            this.ga7.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ga7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga7.Location = new System.Drawing.Point(403, 1222);
-            this.ga7.Name = "ga7";
-            this.ga7.Size = new System.Drawing.Size(46, 24);
-            this.ga7.TabIndex = 57;
-            this.ga7.Text = "a7";
-            this.ga7.UseVisualStyleBackColor = false;
-            // 
-            // ga6
-            // 
-            this.ga6.AutoSize = true;
-            this.ga6.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ga6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga6.Location = new System.Drawing.Point(403, 1128);
-            this.ga6.Name = "ga6";
-            this.ga6.Size = new System.Drawing.Size(46, 24);
-            this.ga6.TabIndex = 56;
-            this.ga6.Text = "a6";
-            this.ga6.UseVisualStyleBackColor = false;
-            // 
-            // ga5
-            // 
-            this.ga5.AutoSize = true;
-            this.ga5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ga5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga5.Location = new System.Drawing.Point(403, 860);
-            this.ga5.Name = "ga5";
-            this.ga5.Size = new System.Drawing.Size(46, 24);
-            this.ga5.TabIndex = 55;
-            this.ga5.Text = "a5";
-            this.ga5.UseVisualStyleBackColor = false;
-            // 
-            // ga4
-            // 
-            this.ga4.AutoSize = true;
-            this.ga4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ga4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga4.Location = new System.Drawing.Point(403, 782);
-            this.ga4.Name = "ga4";
-            this.ga4.Size = new System.Drawing.Size(46, 24);
-            this.ga4.TabIndex = 54;
-            this.ga4.Text = "a4";
-            this.ga4.UseVisualStyleBackColor = false;
-            // 
-            // ga3
-            // 
-            this.ga3.AutoSize = true;
-            this.ga3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ga3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga3.Location = new System.Drawing.Point(403, 692);
-            this.ga3.Name = "ga3";
-            this.ga3.Size = new System.Drawing.Size(46, 24);
-            this.ga3.TabIndex = 53;
-            this.ga3.Text = "a3";
-            this.ga3.UseVisualStyleBackColor = false;
-            // 
-            // ga2
-            // 
-            this.ga2.AutoSize = true;
-            this.ga2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ga2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga2.Location = new System.Drawing.Point(417, 495);
-            this.ga2.Name = "ga2";
-            this.ga2.Size = new System.Drawing.Size(46, 24);
-            this.ga2.TabIndex = 52;
-            this.ga2.Text = "a2";
-            this.ga2.UseVisualStyleBackColor = false;
-            // 
-            // ga1
-            // 
-            this.ga1.AutoSize = true;
-            this.ga1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ga1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga1.Location = new System.Drawing.Point(403, 250);
-            this.ga1.Name = "ga1";
-            this.ga1.Size = new System.Drawing.Size(46, 24);
-            this.ga1.TabIndex = 51;
-            this.ga1.Text = "a1";
-            this.ga1.UseVisualStyleBackColor = false;
-            // 
             // y17
             // 
             this.y17.AutoSize = true;
             this.y17.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y17.Location = new System.Drawing.Point(984, 591);
+            this.y17.Location = new System.Drawing.Point(1093, 610);
             this.y17.Name = "y17";
             this.y17.Size = new System.Drawing.Size(50, 22);
             this.y17.TabIndex = 50;
@@ -2040,7 +2087,7 @@
             this.y16.AutoSize = true;
             this.y16.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y16.Location = new System.Drawing.Point(984, 568);
+            this.y16.Location = new System.Drawing.Point(1093, 587);
             this.y16.Name = "y16";
             this.y16.Size = new System.Drawing.Size(50, 22);
             this.y16.TabIndex = 49;
@@ -2052,7 +2099,7 @@
             this.y15.AutoSize = true;
             this.y15.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y15.Location = new System.Drawing.Point(984, 545);
+            this.y15.Location = new System.Drawing.Point(1093, 564);
             this.y15.Name = "y15";
             this.y15.Size = new System.Drawing.Size(50, 22);
             this.y15.TabIndex = 48;
@@ -2064,7 +2111,7 @@
             this.y14.AutoSize = true;
             this.y14.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y14.Location = new System.Drawing.Point(984, 522);
+            this.y14.Location = new System.Drawing.Point(1093, 541);
             this.y14.Name = "y14";
             this.y14.Size = new System.Drawing.Size(50, 22);
             this.y14.TabIndex = 47;
@@ -2076,7 +2123,7 @@
             this.y13.AutoSize = true;
             this.y13.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y13.Location = new System.Drawing.Point(984, 499);
+            this.y13.Location = new System.Drawing.Point(1093, 518);
             this.y13.Name = "y13";
             this.y13.Size = new System.Drawing.Size(50, 22);
             this.y13.TabIndex = 46;
@@ -2088,7 +2135,7 @@
             this.y12.AutoSize = true;
             this.y12.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y12.Location = new System.Drawing.Point(984, 476);
+            this.y12.Location = new System.Drawing.Point(1093, 495);
             this.y12.Name = "y12";
             this.y12.Size = new System.Drawing.Size(50, 22);
             this.y12.TabIndex = 45;
@@ -2100,7 +2147,7 @@
             this.y11.AutoSize = true;
             this.y11.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y11.Location = new System.Drawing.Point(984, 453);
+            this.y11.Location = new System.Drawing.Point(1093, 472);
             this.y11.Name = "y11";
             this.y11.Size = new System.Drawing.Size(50, 22);
             this.y11.TabIndex = 44;
@@ -2112,7 +2159,7 @@
             this.y10.AutoSize = true;
             this.y10.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y10.Location = new System.Drawing.Point(984, 430);
+            this.y10.Location = new System.Drawing.Point(1093, 449);
             this.y10.Name = "y10";
             this.y10.Size = new System.Drawing.Size(50, 22);
             this.y10.TabIndex = 43;
@@ -2124,7 +2171,7 @@
             this.y9.AutoSize = true;
             this.y9.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y9.Location = new System.Drawing.Point(984, 407);
+            this.y9.Location = new System.Drawing.Point(1093, 426);
             this.y9.Name = "y9";
             this.y9.Size = new System.Drawing.Size(42, 22);
             this.y9.TabIndex = 42;
@@ -2136,7 +2183,7 @@
             this.y8.AutoSize = true;
             this.y8.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y8.Location = new System.Drawing.Point(941, 591);
+            this.y8.Location = new System.Drawing.Point(1050, 610);
             this.y8.Name = "y8";
             this.y8.Size = new System.Drawing.Size(42, 22);
             this.y8.TabIndex = 41;
@@ -2148,7 +2195,7 @@
             this.y7.AutoSize = true;
             this.y7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y7.Location = new System.Drawing.Point(941, 568);
+            this.y7.Location = new System.Drawing.Point(1050, 587);
             this.y7.Name = "y7";
             this.y7.Size = new System.Drawing.Size(42, 22);
             this.y7.TabIndex = 40;
@@ -2160,7 +2207,7 @@
             this.y6.AutoSize = true;
             this.y6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y6.Location = new System.Drawing.Point(941, 545);
+            this.y6.Location = new System.Drawing.Point(1050, 564);
             this.y6.Name = "y6";
             this.y6.Size = new System.Drawing.Size(42, 22);
             this.y6.TabIndex = 39;
@@ -2172,7 +2219,7 @@
             this.y5.AutoSize = true;
             this.y5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y5.Location = new System.Drawing.Point(941, 522);
+            this.y5.Location = new System.Drawing.Point(1050, 541);
             this.y5.Name = "y5";
             this.y5.Size = new System.Drawing.Size(42, 22);
             this.y5.TabIndex = 38;
@@ -2184,7 +2231,7 @@
             this.y4.AutoSize = true;
             this.y4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y4.Location = new System.Drawing.Point(941, 499);
+            this.y4.Location = new System.Drawing.Point(1050, 518);
             this.y4.Name = "y4";
             this.y4.Size = new System.Drawing.Size(42, 22);
             this.y4.TabIndex = 37;
@@ -2196,7 +2243,7 @@
             this.y3.AutoSize = true;
             this.y3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y3.Location = new System.Drawing.Point(941, 476);
+            this.y3.Location = new System.Drawing.Point(1050, 495);
             this.y3.Name = "y3";
             this.y3.Size = new System.Drawing.Size(42, 22);
             this.y3.TabIndex = 36;
@@ -2208,7 +2255,7 @@
             this.y2.AutoSize = true;
             this.y2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y2.Location = new System.Drawing.Point(941, 453);
+            this.y2.Location = new System.Drawing.Point(1050, 472);
             this.y2.Name = "y2";
             this.y2.Size = new System.Drawing.Size(42, 22);
             this.y2.TabIndex = 35;
@@ -2220,7 +2267,7 @@
             this.y1.AutoSize = true;
             this.y1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y1.Location = new System.Drawing.Point(941, 430);
+            this.y1.Location = new System.Drawing.Point(1050, 449);
             this.y1.Name = "y1";
             this.y1.Size = new System.Drawing.Size(42, 22);
             this.y1.TabIndex = 34;
@@ -2232,7 +2279,7 @@
             this.y0.AutoSize = true;
             this.y0.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.y0.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.y0.Location = new System.Drawing.Point(941, 407);
+            this.y0.Location = new System.Drawing.Point(1050, 426);
             this.y0.Name = "y0";
             this.y0.Size = new System.Drawing.Size(42, 22);
             this.y0.TabIndex = 33;
@@ -2244,9 +2291,9 @@
             this.a8.AutoSize = true;
             this.a8.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.a8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.a8.Location = new System.Drawing.Point(997, 51);
+            this.a8.Location = new System.Drawing.Point(983, 104);
             this.a8.Name = "a8";
-            this.a8.Size = new System.Drawing.Size(42, 20);
+            this.a8.Size = new System.Drawing.Size(41, 20);
             this.a8.TabIndex = 32;
             this.a8.Text = "a8";
             this.a8.UseVisualStyleBackColor = false;
@@ -2256,9 +2303,9 @@
             this.D3.AutoSize = true;
             this.D3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.D3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.D3.Location = new System.Drawing.Point(1127, 120);
+            this.D3.Location = new System.Drawing.Point(1166, 168);
             this.D3.Name = "D3";
-            this.D3.Size = new System.Drawing.Size(44, 20);
+            this.D3.Size = new System.Drawing.Size(43, 20);
             this.D3.TabIndex = 31;
             this.D3.Text = "D3";
             this.D3.UseVisualStyleBackColor = false;
@@ -2268,9 +2315,9 @@
             this.D2.AutoSize = true;
             this.D2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.D2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.D2.Location = new System.Drawing.Point(1127, 97);
+            this.D2.Location = new System.Drawing.Point(1166, 145);
             this.D2.Name = "D2";
-            this.D2.Size = new System.Drawing.Size(44, 20);
+            this.D2.Size = new System.Drawing.Size(43, 20);
             this.D2.TabIndex = 30;
             this.D2.Text = "D2";
             this.D2.UseVisualStyleBackColor = false;
@@ -2280,9 +2327,9 @@
             this.D1.AutoSize = true;
             this.D1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.D1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.D1.Location = new System.Drawing.Point(1127, 74);
+            this.D1.Location = new System.Drawing.Point(1166, 122);
             this.D1.Name = "D1";
-            this.D1.Size = new System.Drawing.Size(44, 20);
+            this.D1.Size = new System.Drawing.Size(43, 20);
             this.D1.TabIndex = 29;
             this.D1.Text = "D1";
             this.D1.UseVisualStyleBackColor = false;
@@ -2292,9 +2339,9 @@
             this.D0.AutoSize = true;
             this.D0.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.D0.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.D0.Location = new System.Drawing.Point(1127, 51);
+            this.D0.Location = new System.Drawing.Point(1166, 99);
             this.D0.Name = "D0";
-            this.D0.Size = new System.Drawing.Size(44, 20);
+            this.D0.Size = new System.Drawing.Size(43, 20);
             this.D0.TabIndex = 28;
             this.D0.Text = "D0";
             this.D0.UseVisualStyleBackColor = false;
@@ -2304,7 +2351,7 @@
             this.x6.AutoSize = true;
             this.x6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.x6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.x6.Location = new System.Drawing.Point(1120, 453);
+            this.x6.Location = new System.Drawing.Point(1235, 431);
             this.x6.Name = "x6";
             this.x6.Size = new System.Drawing.Size(42, 22);
             this.x6.TabIndex = 27;
@@ -2316,7 +2363,7 @@
             this.x5.AutoSize = true;
             this.x5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.x5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.x5.Location = new System.Drawing.Point(1120, 430);
+            this.x5.Location = new System.Drawing.Point(1235, 408);
             this.x5.Name = "x5";
             this.x5.Size = new System.Drawing.Size(42, 22);
             this.x5.TabIndex = 26;
@@ -2328,7 +2375,7 @@
             this.x4.AutoSize = true;
             this.x4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.x4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.x4.Location = new System.Drawing.Point(1120, 407);
+            this.x4.Location = new System.Drawing.Point(1235, 385);
             this.x4.Name = "x4";
             this.x4.Size = new System.Drawing.Size(42, 22);
             this.x4.TabIndex = 25;
@@ -2340,7 +2387,7 @@
             this.x3.AutoSize = true;
             this.x3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.x3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.x3.Location = new System.Drawing.Point(1077, 476);
+            this.x3.Location = new System.Drawing.Point(1192, 454);
             this.x3.Name = "x3";
             this.x3.Size = new System.Drawing.Size(42, 22);
             this.x3.TabIndex = 24;
@@ -2352,7 +2399,7 @@
             this.x2.AutoSize = true;
             this.x2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.x2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.x2.Location = new System.Drawing.Point(1077, 453);
+            this.x2.Location = new System.Drawing.Point(1192, 431);
             this.x2.Name = "x2";
             this.x2.Size = new System.Drawing.Size(42, 22);
             this.x2.TabIndex = 23;
@@ -2364,7 +2411,7 @@
             this.x1.AutoSize = true;
             this.x1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.x1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.x1.Location = new System.Drawing.Point(1077, 430);
+            this.x1.Location = new System.Drawing.Point(1192, 408);
             this.x1.Name = "x1";
             this.x1.Size = new System.Drawing.Size(42, 22);
             this.x1.TabIndex = 22;
@@ -2376,7 +2423,7 @@
             this.x0.AutoSize = true;
             this.x0.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.x0.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.x0.Location = new System.Drawing.Point(1077, 407);
+            this.x0.Location = new System.Drawing.Point(1192, 385);
             this.x0.Name = "x0";
             this.x0.Size = new System.Drawing.Size(42, 22);
             this.x0.TabIndex = 21;
@@ -2388,9 +2435,9 @@
             this.a7.AutoSize = true;
             this.a7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.a7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.a7.Location = new System.Drawing.Point(951, 120);
+            this.a7.Location = new System.Drawing.Point(937, 173);
             this.a7.Name = "a7";
-            this.a7.Size = new System.Drawing.Size(42, 20);
+            this.a7.Size = new System.Drawing.Size(41, 20);
             this.a7.TabIndex = 20;
             this.a7.Text = "a7";
             this.a7.UseVisualStyleBackColor = false;
@@ -2400,9 +2447,9 @@
             this.a6.AutoSize = true;
             this.a6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.a6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.a6.Location = new System.Drawing.Point(951, 97);
+            this.a6.Location = new System.Drawing.Point(937, 150);
             this.a6.Name = "a6";
-            this.a6.Size = new System.Drawing.Size(42, 20);
+            this.a6.Size = new System.Drawing.Size(41, 20);
             this.a6.TabIndex = 19;
             this.a6.Text = "a6";
             this.a6.UseVisualStyleBackColor = false;
@@ -2412,9 +2459,9 @@
             this.a5.AutoSize = true;
             this.a5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.a5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.a5.Location = new System.Drawing.Point(951, 74);
+            this.a5.Location = new System.Drawing.Point(937, 127);
             this.a5.Name = "a5";
-            this.a5.Size = new System.Drawing.Size(42, 20);
+            this.a5.Size = new System.Drawing.Size(41, 20);
             this.a5.TabIndex = 18;
             this.a5.Text = "a5";
             this.a5.UseVisualStyleBackColor = false;
@@ -2424,9 +2471,9 @@
             this.a4.AutoSize = true;
             this.a4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.a4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.a4.Location = new System.Drawing.Point(951, 51);
+            this.a4.Location = new System.Drawing.Point(937, 104);
             this.a4.Name = "a4";
-            this.a4.Size = new System.Drawing.Size(42, 20);
+            this.a4.Size = new System.Drawing.Size(41, 20);
             this.a4.TabIndex = 17;
             this.a4.Text = "a4";
             this.a4.UseVisualStyleBackColor = false;
@@ -2436,9 +2483,9 @@
             this.a3.AutoSize = true;
             this.a3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.a3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.a3.Location = new System.Drawing.Point(905, 120);
+            this.a3.Location = new System.Drawing.Point(891, 173);
             this.a3.Name = "a3";
-            this.a3.Size = new System.Drawing.Size(42, 20);
+            this.a3.Size = new System.Drawing.Size(41, 20);
             this.a3.TabIndex = 16;
             this.a3.Text = "a3";
             this.a3.UseVisualStyleBackColor = false;
@@ -2448,9 +2495,9 @@
             this.a2.AutoSize = true;
             this.a2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.a2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.a2.Location = new System.Drawing.Point(905, 97);
+            this.a2.Location = new System.Drawing.Point(891, 150);
             this.a2.Name = "a2";
-            this.a2.Size = new System.Drawing.Size(42, 20);
+            this.a2.Size = new System.Drawing.Size(41, 20);
             this.a2.TabIndex = 15;
             this.a2.Text = "a2";
             this.a2.UseVisualStyleBackColor = false;
@@ -2460,9 +2507,9 @@
             this.a1.AutoSize = true;
             this.a1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.a1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.a1.Location = new System.Drawing.Point(905, 74);
+            this.a1.Location = new System.Drawing.Point(891, 127);
             this.a1.Name = "a1";
-            this.a1.Size = new System.Drawing.Size(42, 20);
+            this.a1.Size = new System.Drawing.Size(41, 20);
             this.a1.TabIndex = 14;
             this.a1.Text = "a1";
             this.a1.UseVisualStyleBackColor = false;
@@ -2472,9 +2519,9 @@
             this.a0.AutoSize = true;
             this.a0.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.a0.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.a0.Location = new System.Drawing.Point(905, 51);
+            this.a0.Location = new System.Drawing.Point(891, 104);
             this.a0.Name = "a0";
-            this.a0.Size = new System.Drawing.Size(42, 20);
+            this.a0.Size = new System.Drawing.Size(41, 20);
             this.a0.TabIndex = 13;
             this.a0.Text = "a0";
             this.a0.UseVisualStyleBackColor = false;
@@ -2484,7 +2531,7 @@
             this.Q3.AutoSize = true;
             this.Q3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Q3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Q3.Location = new System.Drawing.Point(724, 120);
+            this.Q3.Location = new System.Drawing.Point(719, 148);
             this.Q3.Name = "Q3";
             this.Q3.Size = new System.Drawing.Size(47, 22);
             this.Q3.TabIndex = 12;
@@ -2496,7 +2543,7 @@
             this.Q2.AutoSize = true;
             this.Q2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Q2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Q2.Location = new System.Drawing.Point(724, 97);
+            this.Q2.Location = new System.Drawing.Point(719, 125);
             this.Q2.Name = "Q2";
             this.Q2.Size = new System.Drawing.Size(47, 22);
             this.Q2.TabIndex = 11;
@@ -2508,7 +2555,7 @@
             this.Q1.AutoSize = true;
             this.Q1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Q1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Q1.Location = new System.Drawing.Point(724, 74);
+            this.Q1.Location = new System.Drawing.Point(719, 97);
             this.Q1.Name = "Q1";
             this.Q1.Size = new System.Drawing.Size(47, 22);
             this.Q1.TabIndex = 10;
@@ -2520,55 +2567,19 @@
             this.Q0.AutoSize = true;
             this.Q0.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Q0.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Q0.Location = new System.Drawing.Point(724, 51);
+            this.Q0.Location = new System.Drawing.Point(719, 74);
             this.Q0.Name = "Q0";
             this.Q0.Size = new System.Drawing.Size(47, 22);
             this.Q0.TabIndex = 9;
             this.Q0.Text = "Q0";
             this.Q0.UseVisualStyleBackColor = false;
             // 
-            // xm6
-            // 
-            this.xm6.AutoSize = true;
-            this.xm6.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.xm6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xm6.Location = new System.Drawing.Point(744, 419);
-            this.xm6.Name = "xm6";
-            this.xm6.Size = new System.Drawing.Size(42, 22);
-            this.xm6.TabIndex = 8;
-            this.xm6.Text = "x6";
-            this.xm6.UseVisualStyleBackColor = false;
-            // 
-            // xm5
-            // 
-            this.xm5.AutoSize = true;
-            this.xm5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.xm5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xm5.Location = new System.Drawing.Point(744, 396);
-            this.xm5.Name = "xm5";
-            this.xm5.Size = new System.Drawing.Size(42, 22);
-            this.xm5.TabIndex = 7;
-            this.xm5.Text = "x5";
-            this.xm5.UseVisualStyleBackColor = false;
-            // 
-            // xm4
-            // 
-            this.xm4.AutoSize = true;
-            this.xm4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.xm4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xm4.Location = new System.Drawing.Point(744, 373);
-            this.xm4.Name = "xm4";
-            this.xm4.Size = new System.Drawing.Size(42, 22);
-            this.xm4.TabIndex = 6;
-            this.xm4.Text = "x4";
-            this.xm4.UseVisualStyleBackColor = false;
-            // 
             // xm3
             // 
             this.xm3.AutoSize = true;
             this.xm3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.xm3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xm3.Location = new System.Drawing.Point(701, 442);
+            this.xm3.Location = new System.Drawing.Point(702, 372);
             this.xm3.Name = "xm3";
             this.xm3.Size = new System.Drawing.Size(42, 22);
             this.xm3.TabIndex = 5;
@@ -2580,36 +2591,12 @@
             this.xm2.AutoSize = true;
             this.xm2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.xm2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xm2.Location = new System.Drawing.Point(701, 419);
+            this.xm2.Location = new System.Drawing.Point(702, 349);
             this.xm2.Name = "xm2";
             this.xm2.Size = new System.Drawing.Size(42, 22);
             this.xm2.TabIndex = 4;
             this.xm2.Text = "x2";
             this.xm2.UseVisualStyleBackColor = false;
-            // 
-            // xm1
-            // 
-            this.xm1.AutoSize = true;
-            this.xm1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.xm1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xm1.Location = new System.Drawing.Point(701, 396);
-            this.xm1.Name = "xm1";
-            this.xm1.Size = new System.Drawing.Size(42, 22);
-            this.xm1.TabIndex = 3;
-            this.xm1.Text = "x1";
-            this.xm1.UseVisualStyleBackColor = false;
-            // 
-            // xm0
-            // 
-            this.xm0.AutoSize = true;
-            this.xm0.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.xm0.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.xm0.Location = new System.Drawing.Point(701, 373);
-            this.xm0.Name = "xm0";
-            this.xm0.Size = new System.Drawing.Size(42, 22);
-            this.xm0.TabIndex = 2;
-            this.xm0.Text = "x0";
-            this.xm0.UseVisualStyleBackColor = false;
             // 
             // runButton
             // 
@@ -2684,31 +2671,226 @@
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
-            // panel1
+            // t17
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.ga0_0);
-            this.panel1.Controls.Add(this.ga8);
-            this.panel1.Controls.Add(this.ga7);
-            this.panel1.Controls.Add(this.ga6);
-            this.panel1.Controls.Add(this.ga5);
-            this.panel1.Controls.Add(this.ga4);
-            this.panel1.Controls.Add(this.ga3);
-            this.panel1.Controls.Add(this.ga2);
-            this.panel1.Controls.Add(this.ga1);
-            this.panel1.Controls.Add(this.ga0);
-            this.panel1.Controls.Add(this.gsaPictureBox);
-            this.panel1.Location = new System.Drawing.Point(14, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(497, 912);
-            this.panel1.TabIndex = 79;
+            this.t17.AutoSize = true;
+            this.t17.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t17.Location = new System.Drawing.Point(963, 610);
+            this.t17.Name = "t17";
+            this.t17.Size = new System.Drawing.Size(47, 22);
+            this.t17.TabIndex = 97;
+            this.t17.Text = "t17";
+            this.t17.UseVisualStyleBackColor = false;
+            // 
+            // t16
+            // 
+            this.t16.AutoSize = true;
+            this.t16.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t16.Location = new System.Drawing.Point(963, 587);
+            this.t16.Name = "t16";
+            this.t16.Size = new System.Drawing.Size(47, 22);
+            this.t16.TabIndex = 96;
+            this.t16.Text = "t16";
+            this.t16.UseVisualStyleBackColor = false;
+            // 
+            // t15
+            // 
+            this.t15.AutoSize = true;
+            this.t15.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t15.Location = new System.Drawing.Point(963, 564);
+            this.t15.Name = "t15";
+            this.t15.Size = new System.Drawing.Size(47, 22);
+            this.t15.TabIndex = 95;
+            this.t15.Text = "t15";
+            this.t15.UseVisualStyleBackColor = false;
+            // 
+            // t14
+            // 
+            this.t14.AutoSize = true;
+            this.t14.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t14.Location = new System.Drawing.Point(963, 541);
+            this.t14.Name = "t14";
+            this.t14.Size = new System.Drawing.Size(47, 22);
+            this.t14.TabIndex = 94;
+            this.t14.Text = "t14";
+            this.t14.UseVisualStyleBackColor = false;
+            // 
+            // t13
+            // 
+            this.t13.AutoSize = true;
+            this.t13.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t13.Location = new System.Drawing.Point(963, 518);
+            this.t13.Name = "t13";
+            this.t13.Size = new System.Drawing.Size(47, 22);
+            this.t13.TabIndex = 93;
+            this.t13.Text = "t13";
+            this.t13.UseVisualStyleBackColor = false;
+            // 
+            // t12
+            // 
+            this.t12.AutoSize = true;
+            this.t12.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t12.Location = new System.Drawing.Point(963, 495);
+            this.t12.Name = "t12";
+            this.t12.Size = new System.Drawing.Size(47, 22);
+            this.t12.TabIndex = 92;
+            this.t12.Text = "t12";
+            this.t12.UseVisualStyleBackColor = false;
+            // 
+            // t11
+            // 
+            this.t11.AutoSize = true;
+            this.t11.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t11.Location = new System.Drawing.Point(963, 472);
+            this.t11.Name = "t11";
+            this.t11.Size = new System.Drawing.Size(47, 22);
+            this.t11.TabIndex = 91;
+            this.t11.Text = "t11";
+            this.t11.UseVisualStyleBackColor = false;
+            // 
+            // t10
+            // 
+            this.t10.AutoSize = true;
+            this.t10.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t10.Location = new System.Drawing.Point(963, 449);
+            this.t10.Name = "t10";
+            this.t10.Size = new System.Drawing.Size(47, 22);
+            this.t10.TabIndex = 90;
+            this.t10.Text = "t10";
+            this.t10.UseVisualStyleBackColor = false;
+            // 
+            // t9
+            // 
+            this.t9.AutoSize = true;
+            this.t9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t9.Location = new System.Drawing.Point(963, 426);
+            this.t9.Name = "t9";
+            this.t9.Size = new System.Drawing.Size(39, 22);
+            this.t9.TabIndex = 89;
+            this.t9.Text = "t9";
+            this.t9.UseVisualStyleBackColor = false;
+            // 
+            // t8
+            // 
+            this.t8.AutoSize = true;
+            this.t8.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t8.Location = new System.Drawing.Point(920, 610);
+            this.t8.Name = "t8";
+            this.t8.Size = new System.Drawing.Size(39, 22);
+            this.t8.TabIndex = 88;
+            this.t8.Text = "t8";
+            this.t8.UseVisualStyleBackColor = false;
+            // 
+            // t7
+            // 
+            this.t7.AutoSize = true;
+            this.t7.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t7.Location = new System.Drawing.Point(920, 587);
+            this.t7.Name = "t7";
+            this.t7.Size = new System.Drawing.Size(39, 22);
+            this.t7.TabIndex = 87;
+            this.t7.Text = "t7";
+            this.t7.UseVisualStyleBackColor = false;
+            // 
+            // t6
+            // 
+            this.t6.AutoSize = true;
+            this.t6.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t6.Location = new System.Drawing.Point(920, 564);
+            this.t6.Name = "t6";
+            this.t6.Size = new System.Drawing.Size(39, 22);
+            this.t6.TabIndex = 86;
+            this.t6.Text = "t6";
+            this.t6.UseVisualStyleBackColor = false;
+            // 
+            // t5
+            // 
+            this.t5.AutoSize = true;
+            this.t5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t5.Location = new System.Drawing.Point(920, 541);
+            this.t5.Name = "t5";
+            this.t5.Size = new System.Drawing.Size(39, 22);
+            this.t5.TabIndex = 85;
+            this.t5.Text = "t5";
+            this.t5.UseVisualStyleBackColor = false;
+            // 
+            // t4
+            // 
+            this.t4.AutoSize = true;
+            this.t4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t4.Location = new System.Drawing.Point(920, 518);
+            this.t4.Name = "t4";
+            this.t4.Size = new System.Drawing.Size(39, 22);
+            this.t4.TabIndex = 84;
+            this.t4.Text = "t4";
+            this.t4.UseVisualStyleBackColor = false;
+            // 
+            // t3
+            // 
+            this.t3.AutoSize = true;
+            this.t3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t3.Location = new System.Drawing.Point(920, 495);
+            this.t3.Name = "t3";
+            this.t3.Size = new System.Drawing.Size(39, 22);
+            this.t3.TabIndex = 83;
+            this.t3.Text = "t3";
+            this.t3.UseVisualStyleBackColor = false;
+            // 
+            // t2
+            // 
+            this.t2.AutoSize = true;
+            this.t2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t2.Location = new System.Drawing.Point(920, 472);
+            this.t2.Name = "t2";
+            this.t2.Size = new System.Drawing.Size(39, 22);
+            this.t2.TabIndex = 82;
+            this.t2.Text = "t2";
+            this.t2.UseVisualStyleBackColor = false;
+            // 
+            // t1
+            // 
+            this.t1.AutoSize = true;
+            this.t1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t1.Location = new System.Drawing.Point(920, 449);
+            this.t1.Name = "t1";
+            this.t1.Size = new System.Drawing.Size(39, 22);
+            this.t1.TabIndex = 81;
+            this.t1.Text = "t1";
+            this.t1.UseVisualStyleBackColor = false;
+            // 
+            // t0
+            // 
+            this.t0.AutoSize = true;
+            this.t0.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t0.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t0.Location = new System.Drawing.Point(920, 426);
+            this.t0.Name = "t0";
+            this.t0.Size = new System.Drawing.Size(39, 22);
+            this.t0.TabIndex = 80;
+            this.t0.Text = "t0";
+            this.t0.UseVisualStyleBackColor = false;
             // 
             // gsaPictureBox
             // 
-            this.gsaPictureBox.Image = global::modeling.Properties.Resources.GSA;
-            this.gsaPictureBox.Location = new System.Drawing.Point(0, 0);
+            this.gsaPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("gsaPictureBox.Image")));
+            this.gsaPictureBox.Location = new System.Drawing.Point(-11, 0);
             this.gsaPictureBox.Name = "gsaPictureBox";
             this.gsaPictureBox.Size = new System.Drawing.Size(475, 1758);
             this.gsaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2717,11 +2899,11 @@
             // 
             // odPictureBox
             // 
-            this.odPictureBox.Image = global::modeling.Properties.Resources.Sheme;
+            this.odPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("odPictureBox.Image")));
             this.odPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("odPictureBox.InitialImage")));
             this.odPictureBox.Location = new System.Drawing.Point(510, 20);
             this.odPictureBox.Name = "odPictureBox";
-            this.odPictureBox.Size = new System.Drawing.Size(695, 638);
+            this.odPictureBox.Size = new System.Drawing.Size(815, 638);
             this.odPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.odPictureBox.TabIndex = 1;
             this.odPictureBox.TabStop = false;
@@ -2741,6 +2923,8 @@
             this.Text = "Моделирование - курсовая";
             this.gsaPanel.ResumeLayout(false);
             this.gsaPanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cntDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bmDataGrid)).EndInit();
@@ -2750,8 +2934,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.aDataGrid)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gsaPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.odPictureBox)).EndInit();
             this.ResumeLayout(false);
@@ -2804,13 +2986,8 @@
         private System.Windows.Forms.CheckBox Q2;
         private System.Windows.Forms.CheckBox Q1;
         private System.Windows.Forms.CheckBox Q0;
-        private System.Windows.Forms.CheckBox xm6;
-        private System.Windows.Forms.CheckBox xm5;
-        private System.Windows.Forms.CheckBox xm4;
         private System.Windows.Forms.CheckBox xm3;
         private System.Windows.Forms.CheckBox xm2;
-        private System.Windows.Forms.CheckBox xm1;
-        private System.Windows.Forms.CheckBox xm0;
         private System.Windows.Forms.CheckBox ga0_0;
         private System.Windows.Forms.CheckBox ga0;
         private System.Windows.Forms.CheckBox ga8;
@@ -2996,6 +3173,24 @@
         private System.Windows.Forms.TextBox bDecimalTextBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox gsaPictureBox;
+        private System.Windows.Forms.CheckBox t17;
+        private System.Windows.Forms.CheckBox t16;
+        private System.Windows.Forms.CheckBox t15;
+        private System.Windows.Forms.CheckBox t14;
+        private System.Windows.Forms.CheckBox t13;
+        private System.Windows.Forms.CheckBox t12;
+        private System.Windows.Forms.CheckBox t11;
+        private System.Windows.Forms.CheckBox t10;
+        private System.Windows.Forms.CheckBox t9;
+        private System.Windows.Forms.CheckBox t8;
+        private System.Windows.Forms.CheckBox t7;
+        private System.Windows.Forms.CheckBox t6;
+        private System.Windows.Forms.CheckBox t5;
+        private System.Windows.Forms.CheckBox t4;
+        private System.Windows.Forms.CheckBox t3;
+        private System.Windows.Forms.CheckBox t2;
+        private System.Windows.Forms.CheckBox t1;
+        private System.Windows.Forms.CheckBox t0;
     }
 }
 

@@ -19,6 +19,7 @@ namespace modeling
         private CheckBox[] box_X;
         private CheckBox[] box_Y;
         private CheckBox[] box_A_out;
+        private CheckBox[] box_T;
         private OperatingDevice operatingDevice;
         private bool isFirstTact = true;
 
@@ -47,7 +48,7 @@ namespace modeling
             };
             box_XM = new CheckBox[]
             {
-                xm0,xm1,xm2,xm3,xm4,xm5,xm6
+                xm2,xm3
             };
             box_X = new CheckBox[]
             {
@@ -61,6 +62,10 @@ namespace modeling
             {
                 ga0,ga1,ga2,ga3,ga4,ga5,ga6,ga7,ga8,ga0_0
             };
+            box_T = new CheckBox[]
+            {
+                t0,t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16,t17
+            };
             unableBoxes(box_Q);
             unableBoxes(box_A);
             unableBoxes(box_D);
@@ -68,6 +73,7 @@ namespace modeling
             unableBoxes(box_X);
             unableBoxes(box_Y);
             unableBoxes(box_A_out);
+            unableBoxes(box_T);
             operatingDevice = new OperatingDevice();
         }
 
@@ -102,12 +108,13 @@ namespace modeling
                 isFirstTact = false;
                 tactResult = operatingDevice.tact();
                 fillRegisters(tactResult.AM, tactResult.BM, tactResult.DM, tactResult.C, tactResult.count);
-                fillScheme(tactResult.Q, tactResult.a, tactResult.D, tactResult.Y, tactResult.XM, tactResult.X);
+                fillScheme(tactResult.Q, tactResult.a, tactResult.D, tactResult.Y, tactResult.XM, tactResult.X, tactResult.T);
+                box_X[0].Checked = true;
                 return;
             }
             tactResult = operatingDevice.tact();
             fillRegisters(tactResult.AM, tactResult.BM, tactResult.DM, tactResult.C, tactResult.count);
-            fillScheme(tactResult.Q, tactResult.a, tactResult.D, tactResult.Y, tactResult.XM, tactResult.X);
+            fillScheme(tactResult.Q, tactResult.a, tactResult.D, tactResult.Y, tactResult.XM, tactResult.X, tactResult.T);
             fillGSA(tactResult.a);
             if (tactResult.a[0])
             {
@@ -156,7 +163,7 @@ namespace modeling
 
         }
 
-        private void fillScheme(bool[] Q, bool[] a, bool[] D, bool[] Y, bool[] XM, bool[] X)
+        private void fillScheme(bool[] Q, bool[] a, bool[] D, bool[] Y, bool[] XM, bool[] X, bool[] T)
         {
             fillCheckBoxes(box_Q, Q);
             fillCheckBoxes(box_A, a);
@@ -164,6 +171,7 @@ namespace modeling
             fillCheckBoxes(box_Y, Y);
             fillCheckBoxes(box_XM, XM);
             fillCheckBoxes(box_X, X);
+            fillCheckBoxes(box_T, T);
         }
 
         private void fillCheckBoxes(CheckBox[] boxes, bool[] values)
