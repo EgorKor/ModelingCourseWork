@@ -125,7 +125,7 @@ namespace modeling
             }
             return reverse(numStr.ToString());
         }
-
+ 
         private static string reverse(string str)
         {
             string rev = "";
@@ -145,21 +145,14 @@ namespace modeling
         /// <returns>Строковое представление числа с позиционной точкой</returns>
         public static string calcDecimal(UInt32 num, int signBit, int posBit)
         {
-            double absoluteValue = Math.Abs(num); // Получаем абсолютное значение числа
-            double value = absoluteValue;
-
-            // Делим value на 2^decimalPoint, чтобы установить позиционную точку
+            double value = Math.Abs(num);
             value /= Math.Pow(2, posBit);
-
-            // Устанавливаем знак числа в зависимости от значения знакового бита
             if ((num & (1 << signBit)) != 0)
-            {
-                // Если установлен знаковый бит, то число отрицательное
+            { 
                 value *= -1;
                 value += 1;
             }
-
-            return value.ToString("0.#########################"); // Возвращаем строковое представление числа в десятичной системе
+            return Math.Round(value, 5).ToString("0.#####"); // Возвращаем строковое представление числа в десятичной системе
         }
 
     }

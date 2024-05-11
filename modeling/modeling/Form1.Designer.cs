@@ -30,6 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gsaPanel = new System.Windows.Forms.Panel();
+            this.t17 = new System.Windows.Forms.CheckBox();
+            this.t16 = new System.Windows.Forms.CheckBox();
+            this.t15 = new System.Windows.Forms.CheckBox();
+            this.t14 = new System.Windows.Forms.CheckBox();
+            this.t13 = new System.Windows.Forms.CheckBox();
+            this.t12 = new System.Windows.Forms.CheckBox();
+            this.t11 = new System.Windows.Forms.CheckBox();
+            this.t10 = new System.Windows.Forms.CheckBox();
+            this.t9 = new System.Windows.Forms.CheckBox();
+            this.t8 = new System.Windows.Forms.CheckBox();
+            this.t7 = new System.Windows.Forms.CheckBox();
+            this.t6 = new System.Windows.Forms.CheckBox();
+            this.t5 = new System.Windows.Forms.CheckBox();
+            this.t4 = new System.Windows.Forms.CheckBox();
+            this.t3 = new System.Windows.Forms.CheckBox();
+            this.t2 = new System.Windows.Forms.CheckBox();
+            this.t1 = new System.Windows.Forms.CheckBox();
+            this.t0 = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ga0_0 = new System.Windows.Forms.CheckBox();
             this.ga8 = new System.Windows.Forms.CheckBox();
@@ -41,6 +59,7 @@
             this.ga2 = new System.Windows.Forms.CheckBox();
             this.ga1 = new System.Windows.Forms.CheckBox();
             this.ga0 = new System.Windows.Forms.CheckBox();
+            this.gsaPictureBox = new System.Windows.Forms.PictureBox();
             this.aDecimalTextBox = new System.Windows.Forms.TextBox();
             this.bDecimalTextBox = new System.Windows.Forms.TextBox();
             this.resultTextBox = new System.Windows.Forms.TextBox();
@@ -252,34 +271,16 @@
             this.Q0 = new System.Windows.Forms.CheckBox();
             this.xm3 = new System.Windows.Forms.CheckBox();
             this.xm2 = new System.Windows.Forms.CheckBox();
+            this.odPictureBox = new System.Windows.Forms.PictureBox();
             this.runButton = new System.Windows.Forms.Button();
             this.tactButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tactRadioButton = new System.Windows.Forms.RadioButton();
             this.autoRadioButton = new System.Windows.Forms.RadioButton();
             this.resetButton = new System.Windows.Forms.Button();
-            this.t17 = new System.Windows.Forms.CheckBox();
-            this.t16 = new System.Windows.Forms.CheckBox();
-            this.t15 = new System.Windows.Forms.CheckBox();
-            this.t14 = new System.Windows.Forms.CheckBox();
-            this.t13 = new System.Windows.Forms.CheckBox();
-            this.t12 = new System.Windows.Forms.CheckBox();
-            this.t11 = new System.Windows.Forms.CheckBox();
-            this.t10 = new System.Windows.Forms.CheckBox();
-            this.t9 = new System.Windows.Forms.CheckBox();
-            this.t8 = new System.Windows.Forms.CheckBox();
-            this.t7 = new System.Windows.Forms.CheckBox();
-            this.t6 = new System.Windows.Forms.CheckBox();
-            this.t5 = new System.Windows.Forms.CheckBox();
-            this.t4 = new System.Windows.Forms.CheckBox();
-            this.t3 = new System.Windows.Forms.CheckBox();
-            this.t2 = new System.Windows.Forms.CheckBox();
-            this.t1 = new System.Windows.Forms.CheckBox();
-            this.t0 = new System.Windows.Forms.CheckBox();
-            this.gsaPictureBox = new System.Windows.Forms.PictureBox();
-            this.odPictureBox = new System.Windows.Forms.PictureBox();
             this.gsaPanel.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gsaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cntDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bmDataGrid)).BeginInit();
@@ -287,9 +288,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDataGrid)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gsaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.odPictureBox)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gsaPanel
@@ -382,8 +382,224 @@
             this.gsaPanel.Controls.Add(this.odPictureBox);
             this.gsaPanel.Location = new System.Drawing.Point(13, 13);
             this.gsaPanel.Name = "gsaPanel";
-            this.gsaPanel.Size = new System.Drawing.Size(1473, 936);
+            this.gsaPanel.Size = new System.Drawing.Size(1473, 840);
             this.gsaPanel.TabIndex = 0;
+            // 
+            // t17
+            // 
+            this.t17.AutoSize = true;
+            this.t17.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t17.Location = new System.Drawing.Point(963, 610);
+            this.t17.Name = "t17";
+            this.t17.Size = new System.Drawing.Size(47, 22);
+            this.t17.TabIndex = 97;
+            this.t17.Text = "t17";
+            this.t17.UseVisualStyleBackColor = false;
+            // 
+            // t16
+            // 
+            this.t16.AutoSize = true;
+            this.t16.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t16.Location = new System.Drawing.Point(963, 587);
+            this.t16.Name = "t16";
+            this.t16.Size = new System.Drawing.Size(47, 22);
+            this.t16.TabIndex = 96;
+            this.t16.Text = "t16";
+            this.t16.UseVisualStyleBackColor = false;
+            // 
+            // t15
+            // 
+            this.t15.AutoSize = true;
+            this.t15.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t15.Location = new System.Drawing.Point(963, 564);
+            this.t15.Name = "t15";
+            this.t15.Size = new System.Drawing.Size(47, 22);
+            this.t15.TabIndex = 95;
+            this.t15.Text = "t15";
+            this.t15.UseVisualStyleBackColor = false;
+            // 
+            // t14
+            // 
+            this.t14.AutoSize = true;
+            this.t14.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t14.Location = new System.Drawing.Point(963, 541);
+            this.t14.Name = "t14";
+            this.t14.Size = new System.Drawing.Size(47, 22);
+            this.t14.TabIndex = 94;
+            this.t14.Text = "t14";
+            this.t14.UseVisualStyleBackColor = false;
+            // 
+            // t13
+            // 
+            this.t13.AutoSize = true;
+            this.t13.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t13.Location = new System.Drawing.Point(963, 518);
+            this.t13.Name = "t13";
+            this.t13.Size = new System.Drawing.Size(47, 22);
+            this.t13.TabIndex = 93;
+            this.t13.Text = "t13";
+            this.t13.UseVisualStyleBackColor = false;
+            // 
+            // t12
+            // 
+            this.t12.AutoSize = true;
+            this.t12.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t12.Location = new System.Drawing.Point(963, 495);
+            this.t12.Name = "t12";
+            this.t12.Size = new System.Drawing.Size(47, 22);
+            this.t12.TabIndex = 92;
+            this.t12.Text = "t12";
+            this.t12.UseVisualStyleBackColor = false;
+            // 
+            // t11
+            // 
+            this.t11.AutoSize = true;
+            this.t11.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t11.Location = new System.Drawing.Point(963, 472);
+            this.t11.Name = "t11";
+            this.t11.Size = new System.Drawing.Size(47, 22);
+            this.t11.TabIndex = 91;
+            this.t11.Text = "t11";
+            this.t11.UseVisualStyleBackColor = false;
+            // 
+            // t10
+            // 
+            this.t10.AutoSize = true;
+            this.t10.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t10.Location = new System.Drawing.Point(963, 449);
+            this.t10.Name = "t10";
+            this.t10.Size = new System.Drawing.Size(47, 22);
+            this.t10.TabIndex = 90;
+            this.t10.Text = "t10";
+            this.t10.UseVisualStyleBackColor = false;
+            // 
+            // t9
+            // 
+            this.t9.AutoSize = true;
+            this.t9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t9.Location = new System.Drawing.Point(963, 426);
+            this.t9.Name = "t9";
+            this.t9.Size = new System.Drawing.Size(39, 22);
+            this.t9.TabIndex = 89;
+            this.t9.Text = "t9";
+            this.t9.UseVisualStyleBackColor = false;
+            // 
+            // t8
+            // 
+            this.t8.AutoSize = true;
+            this.t8.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t8.Location = new System.Drawing.Point(920, 610);
+            this.t8.Name = "t8";
+            this.t8.Size = new System.Drawing.Size(39, 22);
+            this.t8.TabIndex = 88;
+            this.t8.Text = "t8";
+            this.t8.UseVisualStyleBackColor = false;
+            // 
+            // t7
+            // 
+            this.t7.AutoSize = true;
+            this.t7.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t7.Location = new System.Drawing.Point(920, 587);
+            this.t7.Name = "t7";
+            this.t7.Size = new System.Drawing.Size(39, 22);
+            this.t7.TabIndex = 87;
+            this.t7.Text = "t7";
+            this.t7.UseVisualStyleBackColor = false;
+            // 
+            // t6
+            // 
+            this.t6.AutoSize = true;
+            this.t6.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t6.Location = new System.Drawing.Point(920, 564);
+            this.t6.Name = "t6";
+            this.t6.Size = new System.Drawing.Size(39, 22);
+            this.t6.TabIndex = 86;
+            this.t6.Text = "t6";
+            this.t6.UseVisualStyleBackColor = false;
+            // 
+            // t5
+            // 
+            this.t5.AutoSize = true;
+            this.t5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t5.Location = new System.Drawing.Point(920, 541);
+            this.t5.Name = "t5";
+            this.t5.Size = new System.Drawing.Size(39, 22);
+            this.t5.TabIndex = 85;
+            this.t5.Text = "t5";
+            this.t5.UseVisualStyleBackColor = false;
+            // 
+            // t4
+            // 
+            this.t4.AutoSize = true;
+            this.t4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t4.Location = new System.Drawing.Point(920, 518);
+            this.t4.Name = "t4";
+            this.t4.Size = new System.Drawing.Size(39, 22);
+            this.t4.TabIndex = 84;
+            this.t4.Text = "t4";
+            this.t4.UseVisualStyleBackColor = false;
+            // 
+            // t3
+            // 
+            this.t3.AutoSize = true;
+            this.t3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t3.Location = new System.Drawing.Point(920, 495);
+            this.t3.Name = "t3";
+            this.t3.Size = new System.Drawing.Size(39, 22);
+            this.t3.TabIndex = 83;
+            this.t3.Text = "t3";
+            this.t3.UseVisualStyleBackColor = false;
+            // 
+            // t2
+            // 
+            this.t2.AutoSize = true;
+            this.t2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t2.Location = new System.Drawing.Point(920, 472);
+            this.t2.Name = "t2";
+            this.t2.Size = new System.Drawing.Size(39, 22);
+            this.t2.TabIndex = 82;
+            this.t2.Text = "t2";
+            this.t2.UseVisualStyleBackColor = false;
+            // 
+            // t1
+            // 
+            this.t1.AutoSize = true;
+            this.t1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t1.Location = new System.Drawing.Point(920, 449);
+            this.t1.Name = "t1";
+            this.t1.Size = new System.Drawing.Size(39, 22);
+            this.t1.TabIndex = 81;
+            this.t1.Text = "t1";
+            this.t1.UseVisualStyleBackColor = false;
+            // 
+            // t0
+            // 
+            this.t0.AutoSize = true;
+            this.t0.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.t0.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.t0.Location = new System.Drawing.Point(920, 426);
+            this.t0.Name = "t0";
+            this.t0.Size = new System.Drawing.Size(39, 22);
+            this.t0.TabIndex = 80;
+            this.t0.Text = "t0";
+            this.t0.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -403,7 +619,7 @@
             this.panel1.Controls.Add(this.gsaPictureBox);
             this.panel1.Location = new System.Drawing.Point(14, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(497, 912);
+            this.panel1.Size = new System.Drawing.Size(497, 816);
             this.panel1.TabIndex = 79;
             // 
             // ga0_0
@@ -411,7 +627,7 @@
             this.ga0_0.AutoSize = true;
             this.ga0_0.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga0_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga0_0.Location = new System.Drawing.Point(403, 2017);
+            this.ga0_0.Location = new System.Drawing.Point(394, 1697);
             this.ga0_0.Name = "ga0_0";
             this.ga0_0.Size = new System.Drawing.Size(46, 24);
             this.ga0_0.TabIndex = 60;
@@ -423,7 +639,7 @@
             this.ga8.AutoSize = true;
             this.ga8.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga8.Location = new System.Drawing.Point(403, 1814);
+            this.ga8.Location = new System.Drawing.Point(398, 1470);
             this.ga8.Name = "ga8";
             this.ga8.Size = new System.Drawing.Size(46, 24);
             this.ga8.TabIndex = 58;
@@ -435,7 +651,7 @@
             this.ga7.AutoSize = true;
             this.ga7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga7.Location = new System.Drawing.Point(403, 1582);
+            this.ga7.Location = new System.Drawing.Point(394, 1237);
             this.ga7.Name = "ga7";
             this.ga7.Size = new System.Drawing.Size(46, 24);
             this.ga7.TabIndex = 57;
@@ -447,7 +663,7 @@
             this.ga6.AutoSize = true;
             this.ga6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga6.Location = new System.Drawing.Point(403, 1488);
+            this.ga6.Location = new System.Drawing.Point(398, 1132);
             this.ga6.Name = "ga6";
             this.ga6.Size = new System.Drawing.Size(46, 24);
             this.ga6.TabIndex = 56;
@@ -459,7 +675,7 @@
             this.ga5.AutoSize = true;
             this.ga5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga5.Location = new System.Drawing.Point(403, 1220);
+            this.ga5.Location = new System.Drawing.Point(400, 877);
             this.ga5.Name = "ga5";
             this.ga5.Size = new System.Drawing.Size(46, 24);
             this.ga5.TabIndex = 55;
@@ -471,7 +687,7 @@
             this.ga4.AutoSize = true;
             this.ga4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga4.Location = new System.Drawing.Point(403, 1142);
+            this.ga4.Location = new System.Drawing.Point(404, 779);
             this.ga4.Name = "ga4";
             this.ga4.Size = new System.Drawing.Size(46, 24);
             this.ga4.TabIndex = 54;
@@ -483,7 +699,7 @@
             this.ga3.AutoSize = true;
             this.ga3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga3.Location = new System.Drawing.Point(403, 1052);
+            this.ga3.Location = new System.Drawing.Point(403, 689);
             this.ga3.Name = "ga3";
             this.ga3.Size = new System.Drawing.Size(46, 24);
             this.ga3.TabIndex = 53;
@@ -495,7 +711,7 @@
             this.ga2.AutoSize = true;
             this.ga2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga2.Location = new System.Drawing.Point(417, 855);
+            this.ga2.Location = new System.Drawing.Point(400, 507);
             this.ga2.Name = "ga2";
             this.ga2.Size = new System.Drawing.Size(46, 24);
             this.ga2.TabIndex = 52;
@@ -507,7 +723,7 @@
             this.ga1.AutoSize = true;
             this.ga1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga1.Location = new System.Drawing.Point(403, 610);
+            this.ga1.Location = new System.Drawing.Point(418, 232);
             this.ga1.Name = "ga1";
             this.ga1.Size = new System.Drawing.Size(46, 24);
             this.ga1.TabIndex = 51;
@@ -521,12 +737,22 @@
             this.ga0.Checked = true;
             this.ga0.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ga0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga0.Location = new System.Drawing.Point(403, 430);
+            this.ga0.Location = new System.Drawing.Point(404, 48);
             this.ga0.Name = "ga0";
             this.ga0.Size = new System.Drawing.Size(46, 24);
             this.ga0.TabIndex = 59;
             this.ga0.Text = "a0";
             this.ga0.UseVisualStyleBackColor = false;
+            // 
+            // gsaPictureBox
+            // 
+            this.gsaPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("gsaPictureBox.Image")));
+            this.gsaPictureBox.Location = new System.Drawing.Point(-11, 0);
+            this.gsaPictureBox.Name = "gsaPictureBox";
+            this.gsaPictureBox.Size = new System.Drawing.Size(475, 1769);
+            this.gsaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gsaPictureBox.TabIndex = 0;
+            this.gsaPictureBox.TabStop = false;
             // 
             // aDecimalTextBox
             // 
@@ -2598,6 +2824,17 @@
             this.xm2.Text = "x2";
             this.xm2.UseVisualStyleBackColor = false;
             // 
+            // odPictureBox
+            // 
+            this.odPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("odPictureBox.Image")));
+            this.odPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("odPictureBox.InitialImage")));
+            this.odPictureBox.Location = new System.Drawing.Point(510, 20);
+            this.odPictureBox.Name = "odPictureBox";
+            this.odPictureBox.Size = new System.Drawing.Size(815, 638);
+            this.odPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.odPictureBox.TabIndex = 1;
+            this.odPictureBox.TabStop = false;
+            // 
             // runButton
             // 
             this.runButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -2671,260 +2908,24 @@
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
-            // t17
-            // 
-            this.t17.AutoSize = true;
-            this.t17.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t17.Location = new System.Drawing.Point(963, 610);
-            this.t17.Name = "t17";
-            this.t17.Size = new System.Drawing.Size(47, 22);
-            this.t17.TabIndex = 97;
-            this.t17.Text = "t17";
-            this.t17.UseVisualStyleBackColor = false;
-            // 
-            // t16
-            // 
-            this.t16.AutoSize = true;
-            this.t16.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t16.Location = new System.Drawing.Point(963, 587);
-            this.t16.Name = "t16";
-            this.t16.Size = new System.Drawing.Size(47, 22);
-            this.t16.TabIndex = 96;
-            this.t16.Text = "t16";
-            this.t16.UseVisualStyleBackColor = false;
-            // 
-            // t15
-            // 
-            this.t15.AutoSize = true;
-            this.t15.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t15.Location = new System.Drawing.Point(963, 564);
-            this.t15.Name = "t15";
-            this.t15.Size = new System.Drawing.Size(47, 22);
-            this.t15.TabIndex = 95;
-            this.t15.Text = "t15";
-            this.t15.UseVisualStyleBackColor = false;
-            // 
-            // t14
-            // 
-            this.t14.AutoSize = true;
-            this.t14.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t14.Location = new System.Drawing.Point(963, 541);
-            this.t14.Name = "t14";
-            this.t14.Size = new System.Drawing.Size(47, 22);
-            this.t14.TabIndex = 94;
-            this.t14.Text = "t14";
-            this.t14.UseVisualStyleBackColor = false;
-            // 
-            // t13
-            // 
-            this.t13.AutoSize = true;
-            this.t13.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t13.Location = new System.Drawing.Point(963, 518);
-            this.t13.Name = "t13";
-            this.t13.Size = new System.Drawing.Size(47, 22);
-            this.t13.TabIndex = 93;
-            this.t13.Text = "t13";
-            this.t13.UseVisualStyleBackColor = false;
-            // 
-            // t12
-            // 
-            this.t12.AutoSize = true;
-            this.t12.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t12.Location = new System.Drawing.Point(963, 495);
-            this.t12.Name = "t12";
-            this.t12.Size = new System.Drawing.Size(47, 22);
-            this.t12.TabIndex = 92;
-            this.t12.Text = "t12";
-            this.t12.UseVisualStyleBackColor = false;
-            // 
-            // t11
-            // 
-            this.t11.AutoSize = true;
-            this.t11.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t11.Location = new System.Drawing.Point(963, 472);
-            this.t11.Name = "t11";
-            this.t11.Size = new System.Drawing.Size(47, 22);
-            this.t11.TabIndex = 91;
-            this.t11.Text = "t11";
-            this.t11.UseVisualStyleBackColor = false;
-            // 
-            // t10
-            // 
-            this.t10.AutoSize = true;
-            this.t10.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t10.Location = new System.Drawing.Point(963, 449);
-            this.t10.Name = "t10";
-            this.t10.Size = new System.Drawing.Size(47, 22);
-            this.t10.TabIndex = 90;
-            this.t10.Text = "t10";
-            this.t10.UseVisualStyleBackColor = false;
-            // 
-            // t9
-            // 
-            this.t9.AutoSize = true;
-            this.t9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t9.Location = new System.Drawing.Point(963, 426);
-            this.t9.Name = "t9";
-            this.t9.Size = new System.Drawing.Size(39, 22);
-            this.t9.TabIndex = 89;
-            this.t9.Text = "t9";
-            this.t9.UseVisualStyleBackColor = false;
-            // 
-            // t8
-            // 
-            this.t8.AutoSize = true;
-            this.t8.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t8.Location = new System.Drawing.Point(920, 610);
-            this.t8.Name = "t8";
-            this.t8.Size = new System.Drawing.Size(39, 22);
-            this.t8.TabIndex = 88;
-            this.t8.Text = "t8";
-            this.t8.UseVisualStyleBackColor = false;
-            // 
-            // t7
-            // 
-            this.t7.AutoSize = true;
-            this.t7.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t7.Location = new System.Drawing.Point(920, 587);
-            this.t7.Name = "t7";
-            this.t7.Size = new System.Drawing.Size(39, 22);
-            this.t7.TabIndex = 87;
-            this.t7.Text = "t7";
-            this.t7.UseVisualStyleBackColor = false;
-            // 
-            // t6
-            // 
-            this.t6.AutoSize = true;
-            this.t6.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t6.Location = new System.Drawing.Point(920, 564);
-            this.t6.Name = "t6";
-            this.t6.Size = new System.Drawing.Size(39, 22);
-            this.t6.TabIndex = 86;
-            this.t6.Text = "t6";
-            this.t6.UseVisualStyleBackColor = false;
-            // 
-            // t5
-            // 
-            this.t5.AutoSize = true;
-            this.t5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t5.Location = new System.Drawing.Point(920, 541);
-            this.t5.Name = "t5";
-            this.t5.Size = new System.Drawing.Size(39, 22);
-            this.t5.TabIndex = 85;
-            this.t5.Text = "t5";
-            this.t5.UseVisualStyleBackColor = false;
-            // 
-            // t4
-            // 
-            this.t4.AutoSize = true;
-            this.t4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t4.Location = new System.Drawing.Point(920, 518);
-            this.t4.Name = "t4";
-            this.t4.Size = new System.Drawing.Size(39, 22);
-            this.t4.TabIndex = 84;
-            this.t4.Text = "t4";
-            this.t4.UseVisualStyleBackColor = false;
-            // 
-            // t3
-            // 
-            this.t3.AutoSize = true;
-            this.t3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t3.Location = new System.Drawing.Point(920, 495);
-            this.t3.Name = "t3";
-            this.t3.Size = new System.Drawing.Size(39, 22);
-            this.t3.TabIndex = 83;
-            this.t3.Text = "t3";
-            this.t3.UseVisualStyleBackColor = false;
-            // 
-            // t2
-            // 
-            this.t2.AutoSize = true;
-            this.t2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t2.Location = new System.Drawing.Point(920, 472);
-            this.t2.Name = "t2";
-            this.t2.Size = new System.Drawing.Size(39, 22);
-            this.t2.TabIndex = 82;
-            this.t2.Text = "t2";
-            this.t2.UseVisualStyleBackColor = false;
-            // 
-            // t1
-            // 
-            this.t1.AutoSize = true;
-            this.t1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t1.Location = new System.Drawing.Point(920, 449);
-            this.t1.Name = "t1";
-            this.t1.Size = new System.Drawing.Size(39, 22);
-            this.t1.TabIndex = 81;
-            this.t1.Text = "t1";
-            this.t1.UseVisualStyleBackColor = false;
-            // 
-            // t0
-            // 
-            this.t0.AutoSize = true;
-            this.t0.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.t0.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.t0.Location = new System.Drawing.Point(920, 426);
-            this.t0.Name = "t0";
-            this.t0.Size = new System.Drawing.Size(39, 22);
-            this.t0.TabIndex = 80;
-            this.t0.Text = "t0";
-            this.t0.UseVisualStyleBackColor = false;
-            // 
-            // gsaPictureBox
-            // 
-            this.gsaPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("gsaPictureBox.Image")));
-            this.gsaPictureBox.Location = new System.Drawing.Point(-11, 0);
-            this.gsaPictureBox.Name = "gsaPictureBox";
-            this.gsaPictureBox.Size = new System.Drawing.Size(475, 1758);
-            this.gsaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gsaPictureBox.TabIndex = 0;
-            this.gsaPictureBox.TabStop = false;
-            // 
-            // odPictureBox
-            // 
-            this.odPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("odPictureBox.Image")));
-            this.odPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("odPictureBox.InitialImage")));
-            this.odPictureBox.Location = new System.Drawing.Point(510, 20);
-            this.odPictureBox.Name = "odPictureBox";
-            this.odPictureBox.Size = new System.Drawing.Size(815, 638);
-            this.odPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.odPictureBox.TabIndex = 1;
-            this.odPictureBox.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1584, 961);
+            this.ClientSize = new System.Drawing.Size(1584, 865);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tactButton);
             this.Controls.Add(this.runButton);
             this.Controls.Add(this.gsaPanel);
-            this.MinimumSize = new System.Drawing.Size(1600, 1000);
+            this.MinimumSize = new System.Drawing.Size(1598, 858);
             this.Name = "Form1";
             this.Text = "Моделирование - курсовая";
             this.gsaPanel.ResumeLayout(false);
             this.gsaPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gsaPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cntDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bmDataGrid)).EndInit();
@@ -2932,10 +2933,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.cDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odPictureBox)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gsaPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.odPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

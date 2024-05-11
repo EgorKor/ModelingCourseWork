@@ -36,3 +36,4 @@ C:\Users\Студент\Desktop\ModelingCourseWork\modeling\modeling\obj\Debug\m
 C:\Users\Студент\Desktop\ModelingCourseWork\modeling\modeling\obj\Debug\modeling.csproj.CoreCompileInputs.cache
 C:\Users\Студент\Desktop\ModelingCourseWork\modeling\modeling\obj\Debug\modeling.exe
 C:\Users\Студент\Desktop\ModelingCourseWork\modeling\modeling\obj\Debug\modeling.pdb
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 6\Моделирование\курсач\мой курсач\modeling\modeling\obj\Debug\modeling.Form1.resources

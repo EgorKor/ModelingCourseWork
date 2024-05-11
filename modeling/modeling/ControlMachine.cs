@@ -62,6 +62,7 @@ namespace modeling
             Q = new bool[4];
             D = new bool[4];
             a = new bool[9];
+            T = new bool[18];
             
             terms = new Dictionary<string, Term>()
             {
@@ -70,7 +71,7 @@ namespace modeling
                 {"t2",(bool[] x) => a[1] && !x[1] && x[2]},
                 {"t3",(bool[] x) => a[2] && !x[3]},
                 {"t4",(bool[] x) => a[7] && x[4] && !x[5] && !x[6]},
-                {"t5",(bool[] x) => a[8] && !x[5] && x[6]},
+                {"t5",(bool[] x) => a[7] && x[4] && !x[5] && x[6]},
                 {"t6",(bool[] x) => a[8] && x[6]},
                 {"t7",(bool[] x) => a[8] && x[6]},
                 {"t8",(bool[] x) => a[0] && x[0]},
@@ -119,10 +120,10 @@ namespace modeling
         /// <summary>
         /// Генерирует новые значения выходов КС Y
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Новые значения КС Y</returns>
         public bool[] generateY()
         {
-            Y = new bool[yFunctions.Count];
+            Y = new bool[Y.Length];
             int i = 0;
             foreach (KeyValuePair<String, YFunction> yFunc in yFunctions)
             {
@@ -134,10 +135,10 @@ namespace modeling
         /// <summary>
         /// Генерирует новые значения выходов КС D
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Новые значения выходов D</returns>
         public bool[] generateD()
         {
-            D = new bool[dFunctions.Count];
+            D = new bool[D.Length];
             int i = 0;
             foreach (KeyValuePair<String, DFunction> dFunc in dFunctions)
             {
@@ -146,10 +147,14 @@ namespace modeling
             }
             return D;
         }
-
+        /// <summary>
+        /// Генерирует новые значения выходов KC T
+        /// </summary>
+        /// <param name="x">входы КС Т</param>
+        /// <returns>Новые значения выходов КС Т</returns>
         public bool[] generateT(bool[] x)
         {
-            T = new bool[terms.Count];
+            T = new bool[T.Length];
             int i = 0;
             foreach (KeyValuePair<String, Term> term in terms)
             {
@@ -158,10 +163,5 @@ namespace modeling
             }
             return D;
         }
-
-       
-
-
-
     }
 }

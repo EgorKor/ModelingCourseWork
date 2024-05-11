@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "vMqCJFysJbRyaMjOolsrKP92bKeNSt0oMyU7hwOPrB6mzuZzgmz+ovVxHlNjk7ULVqN9uBQ8UI/obOOpVi7OGg==",
+  "dgSpecHash": "f4q5fWeMYRfc24iYgmccZBm56LA4LTbUL8lWOEAZbLPDlnFK1/K5GLMPRfZ5mdxO411ts77ZY8vx8v1zXVpz7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Студент\\Desktop\\ModelingCourseWork\\modeling\\ConsoleTest\\ConsoleTest.csproj",
+  "projectFilePath": "C:\\Users\\Егор\\Desktop\\Программная инженерия\\Семестр 6\\Моделирование\\курсач\\мой курсач\\modeling\\ConsoleTest\\ConsoleTest.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Студент\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Студент\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Студент\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Студент\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+    "C:\\Users\\Егор\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Егор\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Егор\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Егор\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

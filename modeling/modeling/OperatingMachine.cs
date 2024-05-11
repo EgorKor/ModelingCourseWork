@@ -28,19 +28,19 @@ namespace modeling
             x = new bool[7];
             conditions = new List<ConditionX>()
             {
-                () => false,                                                                           //X0  
-                () => BM == 0,                                                                         //X1
-                () => AM == 0,                                                                         //X2
-                () => (AM & 0x80000000) == 0x80000000,                                                 //X3
-                () => count == 0,                                                                      //X4
-                () => (C & 0b1) == 1,                                                                  //X5
-                () => (((A >> 15) & 0b1) == 1 && ((B >> 15) & 0b1) == 0) || (((A >> 15) & 0b1) == 0 && (((B >> 15) & 0b1) == 1))       //X6
+                () => false,                           //X0  
+                () => BM == 0,                         //X1
+                () => AM == 0,                         //X2
+                () => (AM & 0x80000000) == 0x80000000, //X3
+                () => count == 0,                      //X4
+                () => (C & 0b1) == 1,                  //X5
+                () => (((A >> 15) & 0b1) == 1 && ((B >> 15) & 0b1) == 0) 
+                || (((A >> 15) & 0b1) == 0 && (((B >> 15) & 0b1) == 1))   //X6
             };
         }
 
         public bool[] generateX()
         {
-            x = new bool[conditions.Count];
             for (int i = 0; i < conditions.Count; i++)
                 x[i] = conditions[i]();
             return x;

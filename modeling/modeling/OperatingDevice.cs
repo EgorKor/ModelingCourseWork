@@ -21,7 +21,6 @@ namespace modeling
             operatingMachine = new OperatingMachine();
             controlMachine = new ControlMachine(operatingMachine);
         }
-
         
         public void setA(UInt32 A)
         {
