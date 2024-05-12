@@ -52,6 +52,7 @@ namespace modeling
             this.overflow = overflow;
         }
 
+
         public override string ToString()
         {
             return $"AM = {toBinaryString(AM, 32)}, {calcDecimal(AM, 31,31)}\n" +

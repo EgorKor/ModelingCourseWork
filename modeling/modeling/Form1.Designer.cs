@@ -59,7 +59,6 @@
             this.ga2 = new System.Windows.Forms.CheckBox();
             this.ga1 = new System.Windows.Forms.CheckBox();
             this.ga0 = new System.Windows.Forms.CheckBox();
-            this.gsaPictureBox = new System.Windows.Forms.PictureBox();
             this.aDecimalTextBox = new System.Windows.Forms.TextBox();
             this.bDecimalTextBox = new System.Windows.Forms.TextBox();
             this.resultTextBox = new System.Windows.Forms.TextBox();
@@ -271,16 +270,17 @@
             this.Q0 = new System.Windows.Forms.CheckBox();
             this.xm3 = new System.Windows.Forms.CheckBox();
             this.xm2 = new System.Windows.Forms.CheckBox();
-            this.odPictureBox = new System.Windows.Forms.PictureBox();
             this.runButton = new System.Windows.Forms.Button();
             this.tactButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tactRadioButton = new System.Windows.Forms.RadioButton();
+            this.OUtactRadioButton = new System.Windows.Forms.RadioButton();
             this.autoRadioButton = new System.Windows.Forms.RadioButton();
             this.resetButton = new System.Windows.Forms.Button();
+            this.mpTactRadioButton = new System.Windows.Forms.RadioButton();
+            this.gsaPictureBox = new System.Windows.Forms.PictureBox();
+            this.odPictureBox = new System.Windows.Forms.PictureBox();
             this.gsaPanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gsaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cntDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bmDataGrid)).BeginInit();
@@ -288,8 +288,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.cDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDataGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.odPictureBox)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gsaPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // gsaPanel
@@ -298,8 +299,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gsaPanel.AutoScroll = true;
+            this.gsaPanel.Controls.Add(this.groupBox1);
+            this.gsaPanel.Controls.Add(this.resetButton);
             this.gsaPanel.Controls.Add(this.t17);
+            this.gsaPanel.Controls.Add(this.tactButton);
             this.gsaPanel.Controls.Add(this.t16);
+            this.gsaPanel.Controls.Add(this.runButton);
             this.gsaPanel.Controls.Add(this.t15);
             this.gsaPanel.Controls.Add(this.t14);
             this.gsaPanel.Controls.Add(this.t13);
@@ -382,7 +387,7 @@
             this.gsaPanel.Controls.Add(this.odPictureBox);
             this.gsaPanel.Location = new System.Drawing.Point(13, 13);
             this.gsaPanel.Name = "gsaPanel";
-            this.gsaPanel.Size = new System.Drawing.Size(1473, 840);
+            this.gsaPanel.Size = new System.Drawing.Size(1567, 853);
             this.gsaPanel.TabIndex = 0;
             // 
             // t17
@@ -619,7 +624,7 @@
             this.panel1.Controls.Add(this.gsaPictureBox);
             this.panel1.Location = new System.Drawing.Point(14, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(497, 816);
+            this.panel1.Size = new System.Drawing.Size(497, 829);
             this.panel1.TabIndex = 79;
             // 
             // ga0_0
@@ -639,7 +644,7 @@
             this.ga8.AutoSize = true;
             this.ga8.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga8.Location = new System.Drawing.Point(398, 1470);
+            this.ga8.Location = new System.Drawing.Point(398, 1456);
             this.ga8.Name = "ga8";
             this.ga8.Size = new System.Drawing.Size(46, 24);
             this.ga8.TabIndex = 58;
@@ -651,7 +656,7 @@
             this.ga7.AutoSize = true;
             this.ga7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga7.Location = new System.Drawing.Point(394, 1237);
+            this.ga7.Location = new System.Drawing.Point(398, 1203);
             this.ga7.Name = "ga7";
             this.ga7.Size = new System.Drawing.Size(46, 24);
             this.ga7.TabIndex = 57;
@@ -663,7 +668,7 @@
             this.ga6.AutoSize = true;
             this.ga6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga6.Location = new System.Drawing.Point(398, 1132);
+            this.ga6.Location = new System.Drawing.Point(398, 1112);
             this.ga6.Name = "ga6";
             this.ga6.Size = new System.Drawing.Size(46, 24);
             this.ga6.TabIndex = 56;
@@ -675,7 +680,7 @@
             this.ga5.AutoSize = true;
             this.ga5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga5.Location = new System.Drawing.Point(400, 877);
+            this.ga5.Location = new System.Drawing.Point(398, 834);
             this.ga5.Name = "ga5";
             this.ga5.Size = new System.Drawing.Size(46, 24);
             this.ga5.TabIndex = 55;
@@ -687,7 +692,7 @@
             this.ga4.AutoSize = true;
             this.ga4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga4.Location = new System.Drawing.Point(404, 779);
+            this.ga4.Location = new System.Drawing.Point(400, 721);
             this.ga4.Name = "ga4";
             this.ga4.Size = new System.Drawing.Size(46, 24);
             this.ga4.TabIndex = 54;
@@ -699,7 +704,7 @@
             this.ga3.AutoSize = true;
             this.ga3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga3.Location = new System.Drawing.Point(403, 689);
+            this.ga3.Location = new System.Drawing.Point(404, 645);
             this.ga3.Name = "ga3";
             this.ga3.Size = new System.Drawing.Size(46, 24);
             this.ga3.TabIndex = 53;
@@ -711,7 +716,7 @@
             this.ga2.AutoSize = true;
             this.ga2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga2.Location = new System.Drawing.Point(400, 507);
+            this.ga2.Location = new System.Drawing.Point(400, 463);
             this.ga2.Name = "ga2";
             this.ga2.Size = new System.Drawing.Size(46, 24);
             this.ga2.TabIndex = 52;
@@ -723,7 +728,7 @@
             this.ga1.AutoSize = true;
             this.ga1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ga1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ga1.Location = new System.Drawing.Point(418, 232);
+            this.ga1.Location = new System.Drawing.Point(400, 195);
             this.ga1.Name = "ga1";
             this.ga1.Size = new System.Drawing.Size(46, 24);
             this.ga1.TabIndex = 51;
@@ -743,16 +748,6 @@
             this.ga0.TabIndex = 59;
             this.ga0.Text = "a0";
             this.ga0.UseVisualStyleBackColor = false;
-            // 
-            // gsaPictureBox
-            // 
-            this.gsaPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("gsaPictureBox.Image")));
-            this.gsaPictureBox.Location = new System.Drawing.Point(-11, 0);
-            this.gsaPictureBox.Name = "gsaPictureBox";
-            this.gsaPictureBox.Size = new System.Drawing.Size(475, 1769);
-            this.gsaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gsaPictureBox.TabIndex = 0;
-            this.gsaPictureBox.TabStop = false;
             // 
             // aDecimalTextBox
             // 
@@ -2824,36 +2819,23 @@
             this.xm2.Text = "x2";
             this.xm2.UseVisualStyleBackColor = false;
             // 
-            // odPictureBox
-            // 
-            this.odPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("odPictureBox.Image")));
-            this.odPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("odPictureBox.InitialImage")));
-            this.odPictureBox.Location = new System.Drawing.Point(510, 20);
-            this.odPictureBox.Name = "odPictureBox";
-            this.odPictureBox.Size = new System.Drawing.Size(815, 638);
-            this.odPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.odPictureBox.TabIndex = 1;
-            this.odPictureBox.TabStop = false;
-            // 
             // runButton
             // 
-            this.runButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.runButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.runButton.Location = new System.Drawing.Point(1492, 142);
+            this.runButton.Location = new System.Drawing.Point(835, 670);
             this.runButton.Name = "runButton";
-            this.runButton.Size = new System.Drawing.Size(84, 44);
+            this.runButton.Size = new System.Drawing.Size(143, 44);
             this.runButton.TabIndex = 1;
-            this.runButton.Text = "пуск";
+            this.runButton.Text = "авто пуск";
             this.runButton.UseVisualStyleBackColor = true;
             this.runButton.Click += new System.EventHandler(this.runButton_Click);
             // 
             // tactButton
             // 
-            this.tactButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tactButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tactButton.Location = new System.Drawing.Point(1492, 192);
+            this.tactButton.Location = new System.Drawing.Point(835, 720);
             this.tactButton.Name = "tactButton";
-            this.tactButton.Size = new System.Drawing.Size(84, 39);
+            this.tactButton.Size = new System.Drawing.Size(143, 39);
             this.tactButton.TabIndex = 2;
             this.tactButton.Text = "такт";
             this.tactButton.UseVisualStyleBackColor = true;
@@ -2861,27 +2843,27 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.tactRadioButton);
+            this.groupBox1.Controls.Add(this.mpTactRadioButton);
+            this.groupBox1.Controls.Add(this.OUtactRadioButton);
             this.groupBox1.Controls.Add(this.autoRadioButton);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(1492, 27);
+            this.groupBox1.Location = new System.Drawing.Point(617, 671);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(79, 100);
+            this.groupBox1.Size = new System.Drawing.Size(199, 136);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Режим";
             // 
-            // tactRadioButton
+            // OUtactRadioButton
             // 
-            this.tactRadioButton.AutoSize = true;
-            this.tactRadioButton.Location = new System.Drawing.Point(6, 43);
-            this.tactRadioButton.Name = "tactRadioButton";
-            this.tactRadioButton.Size = new System.Drawing.Size(62, 24);
-            this.tactRadioButton.TabIndex = 1;
-            this.tactRadioButton.Text = "такт";
-            this.tactRadioButton.UseVisualStyleBackColor = true;
-            this.tactRadioButton.CheckedChanged += new System.EventHandler(this.tactRadioButton_CheckedChanged);
+            this.OUtactRadioButton.AutoSize = true;
+            this.OUtactRadioButton.Location = new System.Drawing.Point(6, 67);
+            this.OUtactRadioButton.Name = "OUtactRadioButton";
+            this.OUtactRadioButton.Size = new System.Drawing.Size(161, 44);
+            this.OUtactRadioButton.TabIndex = 1;
+            this.OUtactRadioButton.Text = "Взаимодействие \r\nУА и ОА";
+            this.OUtactRadioButton.UseVisualStyleBackColor = true;
+            this.OUtactRadioButton.CheckedChanged += new System.EventHandler(this.tactRadioButton_CheckedChanged);
             // 
             // autoRadioButton
             // 
@@ -2898,25 +2880,52 @@
             // 
             // resetButton
             // 
-            this.resetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resetButton.Location = new System.Drawing.Point(1492, 238);
+            this.resetButton.Location = new System.Drawing.Point(835, 766);
             this.resetButton.Name = "resetButton";
-            this.resetButton.Size = new System.Drawing.Size(84, 40);
+            this.resetButton.Size = new System.Drawing.Size(143, 40);
             this.resetButton.TabIndex = 4;
             this.resetButton.Text = "сброс";
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
+            // mpTactRadioButton
+            // 
+            this.mpTactRadioButton.AutoSize = true;
+            this.mpTactRadioButton.Location = new System.Drawing.Point(6, 44);
+            this.mpTactRadioButton.Name = "mpTactRadioButton";
+            this.mpTactRadioButton.Size = new System.Drawing.Size(158, 24);
+            this.mpTactRadioButton.TabIndex = 2;
+            this.mpTactRadioButton.Text = "Микропрограмма";
+            this.mpTactRadioButton.UseVisualStyleBackColor = true;
+            this.mpTactRadioButton.CheckedChanged += new System.EventHandler(this.mpTactRadioButton_CheckedChanged);
+            // 
+            // gsaPictureBox
+            // 
+            this.gsaPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("gsaPictureBox.Image")));
+            this.gsaPictureBox.Location = new System.Drawing.Point(-11, 0);
+            this.gsaPictureBox.Name = "gsaPictureBox";
+            this.gsaPictureBox.Size = new System.Drawing.Size(475, 1769);
+            this.gsaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gsaPictureBox.TabIndex = 0;
+            this.gsaPictureBox.TabStop = false;
+            // 
+            // odPictureBox
+            // 
+            this.odPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("odPictureBox.Image")));
+            this.odPictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("odPictureBox.InitialImage")));
+            this.odPictureBox.Location = new System.Drawing.Point(510, 20);
+            this.odPictureBox.Name = "odPictureBox";
+            this.odPictureBox.Size = new System.Drawing.Size(815, 638);
+            this.odPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.odPictureBox.TabIndex = 1;
+            this.odPictureBox.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1584, 865);
-            this.Controls.Add(this.resetButton);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.tactButton);
-            this.Controls.Add(this.runButton);
+            this.ClientSize = new System.Drawing.Size(1582, 865);
             this.Controls.Add(this.gsaPanel);
             this.MinimumSize = new System.Drawing.Size(1598, 858);
             this.Name = "Form1";
@@ -2925,7 +2934,6 @@
             this.gsaPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gsaPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cntDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bmDataGrid)).EndInit();
@@ -2933,9 +2941,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.cDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDataGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.odPictureBox)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gsaPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3164,7 +3173,7 @@
         private System.Windows.Forms.Button runButton;
         private System.Windows.Forms.Button tactButton;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton tactRadioButton;
+        private System.Windows.Forms.RadioButton OUtactRadioButton;
         private System.Windows.Forms.RadioButton autoRadioButton;
         private System.Windows.Forms.Button resetButton;
         private System.Windows.Forms.TextBox resultTextBox;
@@ -3191,6 +3200,7 @@
         private System.Windows.Forms.CheckBox t2;
         private System.Windows.Forms.CheckBox t1;
         private System.Windows.Forms.CheckBox t0;
+        private System.Windows.Forms.RadioButton mpTactRadioButton;
     }
 }
 

@@ -13,5 +13,5 @@ Console.WriteLine($"{OperatingDeviceDetails.toBinaryString(B,16)} {OperatingDevi
 for (int i = 0; i < 25; i++)
 {
     Console.WriteLine($"\nтакт - {i}");
-    Console.WriteLine(device.tact());
+    Console.WriteLine(device.odTact());
 }

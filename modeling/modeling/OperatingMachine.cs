@@ -35,7 +35,7 @@ namespace modeling
                 () => count == 0,                      //X4
                 () => (C & 0b1) == 1,                  //X5
                 () => (((A >> 15) & 0b1) == 1 && ((B >> 15) & 0b1) == 0) 
-                || (((A >> 15) & 0b1) == 0 && (((B >> 15) & 0b1) == 1))   //X6
+                || (((A >> 15) & 0b1 ) == 0 && (((B >> 15) & 0b1) == 1))   //X6
             };
         }
 
@@ -93,80 +93,80 @@ namespace modeling
                 y17(C);
         }
 
-        private void y0(UInt32 AM)
+        public void y0(UInt32 AM)
         {
             this.AM = (AM & 0x0000FFFF) | ((A & 0x7FFF) << 15);
         }
-        private void y1(UInt32 AM)
+        public void y1(UInt32 AM)
         {
             this.AM = this.AM & 0xFFFF8000;
         }
-        private void y2(UInt32 BM)
+        public void y2(UInt32 BM)
         {
             this.BM = (BM & 0x0000FFFF) | (((UInt32)B & 0x7FFF) << 15);
         }
-        private void y3(UInt32 BM)
+        public void y3(UInt32 BM)
         {
             this.BM = this.BM & 0xFFFF8000;
         }
-        private void y4()
+        public void y4()
         {
             overflow = false;
         }
-        private void y5()
+        public void y5()
         {
             C = 0;
         }
-        private void y6()
+        public void y6()
         {
             overflow = true;
         }
-        private void y7(UInt32 AM, UInt32 BM)
+        public void y7(UInt32 AM, UInt32 BM)
         {
             this.AM = AM + (0xC0_00_00_00 | ((~BM) & 0x3F_FF_FF_FF) + 1);
         }
-        private void y8(UInt32 AM, UInt32 BM)
+        public void y8(UInt32 AM, UInt32 BM)
         {
 
             this.AM = AM + (BM & 0x3FFFFFFF);
         }
-        private void y9(UInt32 AM)
+        public void y9(UInt32 AM)
         {
             DM = AM;
         }
-        private void y10(UInt32 BM)
+        public void y10(UInt32 BM)
         {
             this.BM = BM >> 1;
         }
-        private void y11()
+        public void y11()
         {
             count = 0;
         }
 
-        private void y12(UInt32 C)
+        public void y12(UInt32 C)
         {
             this.C = (C << 1) | 0b1;
         }
 
-        private void y13(UInt32 C)
+        public void y13(UInt32 C)
         {
             this.C = C << 1;
         }
 
-        private void y14(UInt32 DM)
+        public void y14(UInt32 DM)
         {
             AM = DM;
         }
-        private void y15(byte count)
+        public void y15(byte count)
         {
             this.count = (byte)(this.count == 0 ? 0xF : count - 1);
         }
-        private void y16(UInt32 C)
+        public void y16(UInt32 C)
         {
             this.C = C + 2;
         }
 
-        private void y17(UInt32 C)
+        public void y17(UInt32 C)
         {
             this.C = C | 0x10000;
         }

@@ -62,6 +62,7 @@ namespace modeling
             Q = new bool[4];
             D = new bool[4];
             a = new bool[9];
+            a[0] = true;
             T = new bool[18];
             
             terms = new Dictionary<string, Term>()

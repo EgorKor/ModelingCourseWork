@@ -100,19 +100,65 @@ namespace modeling
 
         private void tactButton_Click(object sender, EventArgs e)
         {
+            if (OUtactRadioButton.Checked)
+            {
+                ouTact();
+            }
+            else if (mpTactRadioButton.Checked)
+            {
+                mpTact();
+            }
+        }
+
+        private void mpTact()
+        {
             OperatingDeviceDetails tactResult;
-            if (isFirstTact) {
+            if (isFirstTact)
+            {
                 operatingDevice.setRun(true);
                 operatingDevice.setA(readRegister(aDataGrid));
                 operatingDevice.setB(readRegister(bDataGrid));
                 isFirstTact = false;
-                tactResult = operatingDevice.tact();
+                tactResult = operatingDevice.mpTact();
+                fillGSA(tactResult.a);
+                fillRegisters(tactResult.AM, tactResult.BM, tactResult.DM, tactResult.C, tactResult.count);
+                return;
+            }
+            tactResult = operatingDevice.mpTact();
+            fillRegisters(tactResult.AM, tactResult.BM, tactResult.DM, tactResult.C, tactResult.count);
+            fillGSA(tactResult.a);
+            if (tactResult.a[0])
+            {
+                clearGSA();
+                box_A_out[9].Checked = true;
+                if (tactResult.overflow)
+                {
+                    resultTextBox.Text = "Переполнение";
+                }
+                else
+                {
+                    resultTextBox.Text = $"{OperatingDeviceDetails.calcDecimal(tactResult.C, 16, 16)}";
+                }
+                tactButton.Enabled = false;
+            }
+        }
+
+        private void ouTact()
+        {
+            OperatingDeviceDetails tactResult;
+            if (isFirstTact)
+            {
+                operatingDevice.setRun(true);
+                operatingDevice.setA(readRegister(aDataGrid));
+                operatingDevice.setB(readRegister(bDataGrid));
+                isFirstTact = false;
+                tactResult = operatingDevice.odTact();
                 fillRegisters(tactResult.AM, tactResult.BM, tactResult.DM, tactResult.C, tactResult.count);
                 fillScheme(tactResult.Q, tactResult.a, tactResult.D, tactResult.Y, tactResult.XM, tactResult.X, tactResult.T);
                 box_X[0].Checked = true;
                 return;
             }
-            tactResult = operatingDevice.tact();
+            tactResult = operatingDevice.odTact();
             fillRegisters(tactResult.AM, tactResult.BM, tactResult.DM, tactResult.C, tactResult.count);
             fillScheme(tactResult.Q, tactResult.a, tactResult.D, tactResult.Y, tactResult.XM, tactResult.X, tactResult.T);
             fillGSA(tactResult.a);
@@ -195,7 +241,7 @@ namespace modeling
 
         private void reset()
         {
-            if (tactRadioButton.Checked)
+            if (OUtactRadioButton.Checked || mpTactRadioButton.Checked)
                 tactButton.Enabled = true;
             else
                 runButton.Enabled = true;
@@ -261,7 +307,7 @@ namespace modeling
         private void tactRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             reset();
-            if (tactRadioButton.Checked)
+            if (OUtactRadioButton.Checked || mpTactRadioButton.Checked)
                 runButton.Enabled = false;
             else
                 runButton.Enabled = true;
@@ -278,6 +324,15 @@ namespace modeling
         {
             aDataGrid.Rows[0].Cells[e.ColumnIndex].Value = (int)aDataGrid.Rows[0].Cells[e.ColumnIndex].Value == 0 ? 1 : 0;
             aDecimalTextBox.Text = OperatingDeviceDetails.calcDecimal(readRegister(aDataGrid), 15, 15);
+        }
+
+        private void mpTactRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            reset();
+            if (OUtactRadioButton.Checked || mpTactRadioButton.Checked)
+                runButton.Enabled = false;
+            else
+                runButton.Enabled = true;
         }
     }
 }
